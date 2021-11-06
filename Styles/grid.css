@@ -52,6 +52,21 @@
   grid-column-end:3;
 }
 
+.c1-4 {
+  grid-column-start:1;
+  grid-column-end:4;
+}
+
+.c2-6 {
+  grid-column-start:2;
+  grid-column-end:6;
+}
+
+.c2-7 {
+  grid-column-start:2;
+  grid-column-end:7;
+}
+
 .c4-6 {
   grid-column-start:4;
   grid-column-end:6;

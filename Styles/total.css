@@ -35,12 +35,20 @@ body {
 	height:100vh;	
 }
 
+.s3 {
+	width:100vw;
+}
+
 .abs {
 	position: absolute;
 }
 
 .rel {
 	position: relative;
+}
+
+.fix {
+	position: fixed;
 }
 
 .arial {
@@ -65,6 +73,10 @@ body {
 
 
 .pad1 {
+	padding: 1%;
+}
+
+.mar1 {
 	padding: 1%;
 }
 
@@ -94,8 +106,9 @@ body {
 }
 
 #MainContent {
-	grid-template-rows: 2% 8% 3% 85% 2%;
+	grid-template-rows: 2% 13% 3% 80% 2%;
 	grid-template-columns: 2% 9% 6% 5% 5% 71% 2%;
+	overflow-y: scroll;
 }
 
 a.button {
@@ -116,4 +129,8 @@ color: #141414;
 a.button:active {
 background: #FBFBFB;
 color: #141414;
+}
+
+.left {
+	float: left;
 }

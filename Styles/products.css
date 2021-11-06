@@ -1,0 +1,8 @@
+.product {
+	grid-template-rows: 70% 5% 25%;
+	grid-template-columns: 5% 30% 10% 50% 5%;
+}
+
+.play {
+	grid-template-columns: 47.5% 5% 47.5%;
+}
