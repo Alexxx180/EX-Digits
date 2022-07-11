@@ -1,0 +1,79 @@
+#All {
+	grid-template-rows: 24pt 10pt auto 24pt 70pt;
+}
+
+.base-back {
+	background: #141414;
+}
+
+.help-color {
+	color: #EBEBEB;
+}
+
+.help-border {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webit-box-sizing: border-box;
+	border: 2pt dashed #EBEBEB;
+}
+
+.s1 {
+	width:100%;
+	height:100%;
+}
+
+.s2 {
+	width:100vw;
+	height:100vh;	
+}
+
+.illustration {
+	max-width: 480px;
+	max-height: 270px;
+}
+
+.rel {
+	position: relative;
+}
+
+.arial {
+	font-family: "Arial";
+}
+
+.mar0 {
+	margin: 0;
+}
+
+.pad5 {
+	padding: 5pt;
+}
+
+.pad5.mar5 {
+	padding: 5pt;
+	margin: 5pt;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    background: #141414;
+	color: #EBEBEB;
+}
+
+a.button:hover {
+    background: #EBEBEB;
+    color: #141414;
+}
+
+a.button:active {
+    background: #FBFBFB;
+    color: #141414;
+}
+
+a.button.selected {
+    background: #FBFBFB;
+    color: #141414;
+}
