@@ -1,3 +1,11 @@
+h1 {
+	font-size: 32px;
+}
+
+p {
+	font-size: 20px;
+}
+
 #All {
 	grid-template-rows: 24pt 10pt auto 24pt 70pt;
 }
