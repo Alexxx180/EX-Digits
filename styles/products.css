@@ -1,6 +1,6 @@
 img {
-  max-width: 16px;
-  max-height: 16px;
+  max-width: 21px;
+  max-height: 21px;
 }
 
 .collapsible {
@@ -12,11 +12,12 @@ img {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 12pt;
+  font-size: 24px;
 }
 
 .content {
   padding: 0 18px;
+  font-size: 21px;
   display: none;
   overflow:hidden;
 }
