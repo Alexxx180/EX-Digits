@@ -12,7 +12,7 @@ a {
 }
 
 #All {
-	grid-template-rows: auto 10pt 1fr auto 10pt 80pt;
+	grid-template-rows: auto 10pt 1fr auto 10pt 100pt;
 }
 
 .text-center {
