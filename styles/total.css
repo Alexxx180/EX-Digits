@@ -85,8 +85,8 @@ a.button {
     appearance: button;
 
     text-decoration: none;
-    background: #141414;
-	color: #EBEBEB;
+    background: #282828;
+    color: #EBEBEB;
 }
 
 a.button:hover {
