@@ -1,18 +1,27 @@
-img {
-  max-width: 21px;
-  max-height: 21px;
+td {
+	padding-right: 20px;
 }
 
 .collapsible {
-  background-color: #333;
+  border: none;
+  outline: none;
   color: white;
+  background: #333333;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
   text-align: left;
-  outline: none;
   font-size: 24px;
+}
+
+.collapsible > img {
+	vertical-align: middle;
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.collapsible > span {
+	vertical-align: middle;
 }
 
 .content {
