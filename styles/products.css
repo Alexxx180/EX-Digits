@@ -1,17 +1,21 @@
+br {
+	clear: both;	
+}
+
 td {
 	padding-right: 20px;
 }
 
 .collapsible {
-  border: none;
-  outline: none;
-  color: white;
-  background: #333333;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  font-size: 24px;
+	border: none;
+	outline: none;
+	color: white;
+	background: #333333;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	font-size: 24px;
 }
 
 .collapsible > img {
@@ -25,12 +29,12 @@ td {
 }
 
 .content {
-  padding: 0 18px;
-  font-size: 21px;
-  display: none;
-  overflow:hidden;
+	padding: 0 18px;
+	font-size: 21px;
+	display: none;
+	overflow:hidden;
 }
 
 .active, .collapsible:hover {
-  background-color: #5F5F5F;
+	background-color: #5F5F5F;
 }
