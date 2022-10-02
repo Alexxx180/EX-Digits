@@ -1,18 +1,28 @@
 a {
+	color: rgb(240, 240, 240);
+}
+
+address {
+	font-size: 18px;
+}
+
+header > a, nav > a {
 	font-size: 24px;
 	float: left;
 }
+
+
 
 #All {
 	grid-template-rows: auto 10pt 1fr auto 10pt 120pt;
 }
 
-footer > p, .text-center {
-	text-align: center;
+footer > a, header, details, .block {
+	display: block;
 }
 
-header, details, .block {
-	display: block;
+footer, .text-center {
+	text-align: center;
 }
 
 header, .block.center {
@@ -24,7 +34,7 @@ body, footer, main, .base-back {
 	background: #141414;
 }
 
-footer, main, .help-color {
+address, footer, main, .help-color {
 	color: #EBEBEB;
 }
 

@@ -30,7 +30,7 @@ details > section, .content {
 	font-size: 21px;
 }
 
-summary:hover, .active, .name:hover {
+details[open] > summary, summary:hover, .active, .name:hover {
 	background-color: #5F5F5F;
 }
 
