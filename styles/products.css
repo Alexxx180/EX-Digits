@@ -6,35 +6,53 @@ td {
 	padding-right: 20px;
 }
 
-.collapsible {
-	border: none;
-	outline: none;
+summary, .name {
 	color: white;
 	background: #333333;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
+	width: 1fr;
 	text-align: left;
 	font-size: 24px;
 }
 
-.collapsible > img {
+summary > span, summary > img, .name > span, .name > img {
 	vertical-align: middle;
+}
+
+summary > img, .name > img {
 	max-width: 32px;
 	max-height: 32px;
 }
 
-.collapsible > span {
-	vertical-align: middle;
-}
-
-.content {
+details > section, .content {
 	padding: 0 18px;
 	font-size: 21px;
-	display: none;
-	overflow:hidden;
 }
 
-.active, .collapsible:hover {
+summary:hover, .active, .name:hover {
 	background-color: #5F5F5F;
+}
+
+.key, .tag {
+	border: 1px solid rgb(240, 240, 240);
+}
+
+.key {
+	padding: 7px;
+}
+
+.tag {
+	display: inline;
+	border-radius: 25px;
+	padding: 5px 10px;
+}
+
+.left {
+	float: left;
+	margin-right: 20px;
+}
+
+.right {
+	float: right;
 }

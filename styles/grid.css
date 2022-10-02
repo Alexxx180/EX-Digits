@@ -1,15 +1,15 @@
-.grid {
+#All, .grid {
     display: grid;
 }
 
-.r3 {
+main, .r3 {
     grid-row: 3;
 }
 
-.r4 {
+nav, .r4 {
     grid-row: 4;
 }
 
-.r6 {
+footer, .r6 {
     grid-row: 6;
 }
