@@ -12,7 +12,7 @@ summary {
 	font-size: 24px;
 	text-align: left;
 	padding: 18px;
-	
+
 	cursor: pointer;
 	color: rgb(183, 183, 183);
 	background: rgb(40, 40, 40);
@@ -38,7 +38,7 @@ details[open] > summary, summary:hover {
 }
 
 .key, .tag {
-	border: 1px solid rgb(240, 240, 240);
+	border: 2px solid rgb(183, 183, 183);
 }
 
 .key {
@@ -46,6 +46,7 @@ details[open] > summary, summary:hover {
 }
 
 .tag {
+	color: rgb(183, 183, 183);
 	display: inline;
 	border-radius: 25px;
 	padding: 5px 10px;
