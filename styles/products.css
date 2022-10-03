@@ -6,21 +6,23 @@ td {
 	padding-right: 20px;
 }
 
-summary, .name {
-	color: white;
-	background: #333333;
-	cursor: pointer;
-	padding: 18px;
+summary {
 	width: 1fr;
-	text-align: left;
+	
 	font-size: 24px;
+	text-align: left;
+	padding: 18px;
+	
+	cursor: pointer;
+	color: rgb(183, 183, 183);
+	background: rgb(40, 40, 40);
 }
 
-summary > span, summary > img, .name > span, .name > img {
+summary > span, summary > img {
 	vertical-align: middle;
 }
 
-summary > img, .name > img {
+summary > img {
 	max-width: 32px;
 	max-height: 32px;
 }
@@ -30,8 +32,9 @@ details > section, .content {
 	font-size: 21px;
 }
 
-details[open] > summary, summary:hover, .active, .name:hover {
-	background-color: #5F5F5F;
+details[open] > summary, summary:hover {
+	color: rgb(240, 240, 240);
+	background-color: rgb(60, 60, 60);
 }
 
 .key, .tag {
@@ -51,8 +54,4 @@ details[open] > summary, summary:hover, .active, .name:hover {
 .left {
 	float: left;
 	margin-right: 20px;
-}
-
-.right {
-	float: right;
 }

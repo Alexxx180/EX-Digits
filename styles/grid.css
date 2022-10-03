@@ -1,5 +1,6 @@
-#All, .grid {
+body {
     display: grid;
+    grid-template-rows: auto 10pt 1fr auto 10pt 120pt;
 }
 
 main, .r3 {
