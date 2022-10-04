@@ -21,6 +21,65 @@
 <main class="stretch">
 	<details>
 		<summary>
+			<span class="key">HP</span>
+			Health points
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+			</nav>
+			<br/>
+			<article>
+				<h4>This stat is presented in the form of a bar.</h4>
+				<ul>
+					<li>The bar is empty when <b>HP</b> is at 0.</li>
+					<li>Each enemy have their own maximum <b>HP</b>.</li>
+					<li>Your hero can increase <b>HP</b> same way<br/>
+					as other stats.</li>
+					<li>When the bar is empty - entity lost<br/>
+					and dissappear from the battlefield.</li>
+					<li>When your Hero <b>HP</b> is at 0 - you're<br/>
+					lost and you will be withdrawn from the game.
+					</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Can be found in:</h4>
+				<ol>
+					<li>The right top corner in battle status bar.</li>
+					<li>
+						<section>
+							Top bar in content of <a href="#">Game menu</a> tabs:
+							<ul>
+								<li>Status</li>
+								<li>Skills</li>
+								<li>Items</li>
+								<li>Equipment</li>
+							</ul>
+						</section>
+					</li>
+				</ol>
+			</article>
+
+			<article>
+				<h4>Main RPG stat</h4>
+				<p>You need to support it above 0 <br/>
+				throughout adventure to progress.</p>
+			</article>
+
+			<article>
+				<h4>Enemy approaches</h4>
+				<p>The first of two ways to end a normal<br/>
+				battle is to reduce all enemies <b>HP</b> to 0.</p>
+				<p>Since you can't escape boss battle,<br/>
+				approach above - is only way to go.</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
 			<span class="key">Time</span>
 		</summary>
 		<section>
@@ -28,19 +87,37 @@
 				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
 			</nav>
 			<br/>
-			<h4>This stat is presented in the form of a bar.</h4>
-			<p>
-				When the bar is full, new entity turn starts.
-			</p>
-			<p>
-				After end of each entity turn time ticking<br/>
-				starts. During the time ticking, bar fills<br/>
-				with segments of new time points.
-			</p>
-			<p id="TimePoint">
-				Time point - minimal time measurement unit<br/>
-				in the game. It can be only in a range of (0..100).
-			</p>
+			<article>
+				<h4>This stat is presented in the form of a bar.</h4>
+				<ul id="TimePoint">
+					<li>
+						<article>
+							<p>After end of each entity turn time ticking<br/>
+							starts. During the time ticking, bar fills<br/>
+							with segments of new time points.</p>
+							<p class="key">
+								Time point</a> = (240 / Entity
+								<a href="#Speed">SPD</a>)
+								<a href="https://en.wikipedia.org/wiki/Millisecond">ms</a>
+							</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<h5><p><span class="key">TP</span>
+							Time point - time measurement unit.</p>
+							<p>It can be only in a range of (0..100).</p>
+							<p>Time bar is full when it's <span class="key">TP</span>
+							at 100.</p></h5>
+						</article>
+					</li>
+					<li>When the bar is full, new entity turn starts.</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Can be found in the bottom in battle status bar.</h4>
+			</article>
 		</section>
 	</details>
 
@@ -54,26 +131,44 @@
 				<a href="https://youtu.be/hGgOZeEUVBM?t=63">Demo</a>
 			</nav>
 			<br/>
-			<h4>Also known as <span class="key">ATK</span> for short.</h4>
-			<p>Determines physical damage applying to target.</p>
+			<article>
+				<h4>Also known as <span class="key">ATK</span> for short.</h4>
+				<p>Determines physical damage applying to target.</p>
+			</article>
 
-			<p class="key" id="Damage">
-				Damage = Fighter <b>ATK</b> - Target <b>DEF</b>
-			</p>
+			<article>
+				<table>
+					<tr><td>Ray</td>
+					<td>ATK</td>
+					<td>25</td></tr>
 
-			<table>
-				<tr><td>Ray</td>
-				<td>ATK</td>
-				<td>25</td></tr>
+					<tr><td>Spider</td>
+					<td>DEF</td>
+					<td>0</td></tr>
+				</table>
 
-				<tr><td>Spider</td>
-				<td>DEF</td>
-				<td>0</td></tr>
-			</table>
+				<p class="key">
+					<a href="values.html#DamageATK">Damage</a> = Ray - Spider = 25 - 0 = 25
+				</p>
+			</article>
 
-			<p class="key">
-				Damage = Ray - Spider = 25 - 0 = 25
-			</p>
+			<article>
+				<h4>Can be found in:</h4>
+				<ol>
+					<li>The right top corner in battle status bar.</li>
+					<li>
+						<section>
+							Top bar in content of <a href="#">Game menu</a> tabs:
+							<ul>
+								<li>Status</li>
+								<li>Skills</li>
+								<li>Items</li>
+								<li>Equipment</li>
+							</ul>
+						</section>
+					</li>
+				</ol>
+			</article>
 		</section>
 	</details>
 
@@ -91,7 +186,7 @@
 			<p>Saves <span class="key">HP</span>, taking a part of physical damage.</p>
 
 			<p class="key">
-				Saved <b>HP</b> = Fighter <b>ATK</b> - <a href="#Damage">Damage</a> = Target <b>DEF</b>
+				Saved <b>HP</b> = Fighter <b>ATK</b> - <a href="values.html#DamageATK">Damage</a> = Target <b>DEF</b>
 			</p>
 
 			<table>
@@ -120,21 +215,16 @@
 				<a href="https://youtu.be/hGgOZeEUVBM?t=52">Demo</a>
 			</nav>
 			<br/>
-			<h4>Also known as <span class="key">SPD</span> for short.</h4>
-			<p>Determines entity time points recovering speed and escape chance.</p>
-
-			<article>
-				<h4>Time points</h4>
-				<p class="key">
-					1 <a href="#TimePoint">Time point</a> = (240 / Entity <b>SPD</b>)
-					<a href="https://en.wikipedia.org/wiki/Millisecond" target="_blank">ms</a>
-				</p>
+			<article id="Speed">
+				<h4>Also known as <span class="key">SPD</span> for short.</h4>
+				<p>Determines entity <a href="#TimePoint">TP</a>s recovering and
+					<a href="#EscapeChance">escape chance</a>.</p>
 			</article>
 
 			<article>
 				<h4>Escape</h4>
 
-				<p class="key">
+				<p class="key" id="EscapeChance">
 					∀escape ∈ Successful escape : (escape > 1)<br/><br/>
 					escape = (Hero - Fastest enemy) <b>SPD</b><br/><br/>
 					∀enemy ∈ Enemies : (enemy ≤ Fastest enemy)
@@ -171,11 +261,38 @@
 			</article>
 		</section>
 	</details>
+
+	<details>
+		<summary>
+			<img alt="Star" src="https://github.com/Alexxx180/Desert-Rage/blob/f9aa1389b18bc2ea8ee9fc2d93eb37fc0f2c5475/WpfApp1/SP2.png?raw=true">
+			Special
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/hGgOZeEUVBM?t=163">Cure</a>
+				<a href="https://youtu.be/hGgOZeEUVBM?t=202">Torch</a>
+			</nav>
+			<br/>
+			<h4>Also known as <span class="key">SPL</span> for short.</h4>
+			<ul>
+				<li>
+					<article>
+						<h4>For hero</h4>
+						<p>Determines power of using concrete skills.</p>
+						<p class="key">
+							Cure power = <b>SPL</b> * 2
+						</p>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</details>
 </main>
 
 <nav>
 	<a href="../controls.html">Controls</a>
 	<a href="contents.html" class="selected">Stats</a>
+	<a href="values.html">Values</a>
 	<a href="statuses.html">Statuses</a>
 	<a href="enemies/contents.html">Enemies</a>
 	<a href="items/contents.html">Items</a>

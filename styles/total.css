@@ -58,7 +58,7 @@ nav > a {
 	margin: 1px;
 }
 
-header > a {
+ol > li, header > a {
 	margin: 5pt;
 }
 
