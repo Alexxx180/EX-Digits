@@ -32,7 +32,8 @@ details > section, .content {
 	font-size: 21px;
 }
 
-details[open] > summary, summary:hover {
+details[open] > summary,
+summary:hover, tr:hover {
 	color: rgb(240, 240, 240);
 	background-color: rgb(60, 60, 60);
 }

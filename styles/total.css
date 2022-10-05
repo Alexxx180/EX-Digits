@@ -7,6 +7,10 @@ body {
 	color: rgb(127, 127, 127);
 }
 
+.digits {
+	text-align: right;
+}
+
 footer, .centered {
 	text-align: center;
 }
