@@ -186,30 +186,12 @@
 			<br/>
 			<article>
 				<h4>This stat is presented in the form of a bar.</h4>
-				<ul id="TimePoint">
-					<li>
-						<article>
-							<p>After end of each entity turn time ticking<br/>
-							starts. During the time ticking, bar fills<br/>
-							with segments of new time points.</p>
-							<p class="key">
-								Time point</a> = (240 / Entity
-								<a href="#Speed">SPD</a>)
-								<a href="https://en.wikipedia.org/wiki/Millisecond">ms</a>
-							</p>
-						</article>
-					</li>
-					<li>
-						<article>
-							<h5><p><span class="key">TP</span>
-							Time point - time measurement unit.</p>
-							<p>It can be only in a range of (0..100).</p>
-							<p>Time bar is full when it's <span class="key">TP</span>
-							at 100.</p></h5>
-						</article>
-					</li>
-					<li>When the bar is full, new entity turn starts.</li>
-				</ul>
+				<p>After end of each entity turn time ticking<br/>
+				starts. During the time ticking, bar fills<br/>
+				with segments of new time points.</p>
+				<p>Time bar is full when it's
+				<a href="coefficients/demo.html#TimePoint">TP</a> at 100.</p>
+				<p>When the bar is full, new entity turn starts.</p>
 			</article>
 
 			<article>
@@ -320,8 +302,8 @@
 			<br/>
 			<article id="Speed">
 				<h4>Also known as <span class="key">SPD</span> for short.</h4>
-				<p>Determines entity <a href="#TimePoint">TP</a>s recovering and
-					<a href="#EscapeChance">escape chance</a>.</p>
+				<p>Determines entity <a href="coefficients/demo.html#TimePoint">TP</a>s recovering and
+					<a href="../events/demo.html#EscapeChance">escape chance</a>.</p>
 			</article>
 
 			<article>
@@ -334,45 +316,6 @@
 						<li>Equipment</li>
 					</ul>
 				</section>
-			</article>
-
-			<article>
-				<h4>Escape</h4>
-
-				<p class="key" id="EscapeChance">
-					∀escape ∈ Successful escape : (escape > 1)<br/><br/>
-					escape = (Hero - Fastest enemy) <b>SPD</b><br/><br/>
-					∀enemy ∈ Enemies : (enemy ≤ Fastest enemy)
-				</p>
-
-				<table class="left">
-					<tr><td>Enemies</td>
-					<td class="key">SPD</td></tr>
-
-					<tr><td><b>Spider A</b></td>
-					<td class="centered"><b>10</b></td></tr>
-
-					<tr><td>Spider B</td>
-					<td class="centered">10</td></tr>
-
-					<tr><td>Spider C</td>
-					<td class="centered">10</td></tr>
-				</table>
-
-				<table class="left">
-					<tr><td>Hero</td>
-					<td class="key">SPD</td></tr>
-
-					<tr><td><b>Ray</b></td>
-					<td class="centered"><b>15</b></td></tr>
-				</table>
-
-				<p class="left key">
-					escape = 15 - 10 = 5<br/><br/>
-					escape ∈ Successful escape<br/><br/>
-					<b>Can Escape</b>
-				</p>
-				<br/><br/>
 			</article>
 		</section>
 	</details>
