@@ -23,7 +23,6 @@ summary > span, summary > img {
 }
 
 summary > img {
-	max-width: 32px;
 	max-height: 32px;
 }
 
