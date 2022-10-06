@@ -32,7 +32,7 @@ details > section, .content {
 }
 
 details[open] > summary,
-summary:hover, tr:hover {
+summary:hover, tr:hover, tr:target {
 	color: rgb(240, 240, 240);
 	background-color: rgb(60, 60, 60);
 }
