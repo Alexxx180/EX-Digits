@@ -2,8 +2,8 @@ br {
 	clear: both;	
 }
 
-td {
-	padding-right: 20px;
+table.compare > tr > td {
+	margin-right: 20px;
 }
 
 summary {
@@ -32,7 +32,8 @@ details > section, .content {
 }
 
 details[open] > summary,
-summary:hover, tr:hover, tr:target {
+summary:hover, tr:hover,
+tr:target, td:target {
 	color: rgb(240, 240, 240);
 	background-color: rgb(60, 60, 60);
 }
