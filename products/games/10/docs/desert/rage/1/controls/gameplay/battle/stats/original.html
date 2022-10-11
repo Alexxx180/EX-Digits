@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>DR - Demo - Stats</title>
+	<title>DR - Original - Stats</title>
 
 	<link rel="shortcut icon" href="../../../../../../../../icons/desert-rage.ico" />
 	<link rel="stylesheet" href="../../../../../../../../../../../styles/grid.css" />
@@ -13,8 +13,8 @@
 
 <header>
 	<a href="../../../../about.html">Desert Rage</a>
-	<a href="demo.html" class="selected">Demo</a>
-    <a href="original.html">Original</a>
+	<a href="demo.html">Demo</a>
+    <a href="original.html" class="selected">Original</a>
     <a href="se.html">Serious Edition</a>
 </header>
 
@@ -26,7 +26,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="../events/demo.html#Growth">Boost</a>
+				<a href="../events/original.html#Growth">Boost</a>
 			</nav>
 			<br/>
 
@@ -43,7 +43,7 @@
 					<li>Under state icon of battle status bar.</li>
 					<li>
 						<section>
-							Top middle label of content of <a href="../../../demo.html#GameMenu">Game menu</a> tabs:
+							Top middle label of content of <a href="../../../original.html#GameMenu">Game menu</a> tabs:
 							<ul>
 								<li>Status</li>
 								<li>Skills</li>
@@ -62,7 +62,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=26">Demo</a>
 			</nav>
 			<br/>
 			<article id="HP">
@@ -86,7 +86,7 @@
 					<li>The right top corner of battle status bar.</li>
 					<li>
 						<section>
-							Top bar of content of <a href="../../../demo.html#GameMenu">Game menu</a> tabs:
+							Top bar of content of <a href="../../../original.html#GameMenu">Game menu</a> tabs:
 							<ul>
 								<li>Status</li>
 								<li>Skills</li>
@@ -121,7 +121,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=202">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=195">Demo</a>
 			</nav>
 			<br/>
 			<article>
@@ -147,7 +147,7 @@
 					<li>
 						<section>
 							Under top bar of content of
-							<a href="../../../demo.html#GameMenu">Game menu</a> tabs:
+							<a href="../../../original.html#GameMenu">Game menu</a> tabs:
 							<ul>
 								<li>Status</li>
 								<li>Items</li>
@@ -156,7 +156,7 @@
 						</section>
 					</li>
 					<li>Bottom bar of content of Skills
-						<a href="../../../demo.html#GameMenu">Game menu</a> tab.
+						<a href="../../../original.html#GameMenu">Game menu</a> tab.
 					</li>
 				</ol>
 			</article>
@@ -179,7 +179,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=29">Demo</a>
 			</nav>
 			<br/>
 			<article id="EXP">
@@ -189,7 +189,7 @@
 					recieve EXP per every defeated<br/>
 					enemy, filling the bar.</li>
 					<li>When the bar is full, hero gets a
-					<a href="../events/demo.html#LevelUP">Level UP</a>.</li>
+					<a href="../events/original.html#LevelUP">Level UP</a>.</li>
 				</ul>
 			</article>
 
@@ -199,7 +199,7 @@
 					<li>The bottom of battle status bar.</li>
 					<li>
 						Under <a href="#AP">AP</a> bar of content of
-						Status <a href="../../../demo.html#GameMenu">
+						Status <a href="../../../original.html#GameMenu">
 						Game menu</a> tab.
 					</li>
 				</ul>
@@ -213,18 +213,36 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=19">Demo</a>
 			</nav>
 			<br/>
+
 			<article id="Time">
 				<h4>This stat is presented in the form of a bar.</h4>
 				<p>After end of each entity turn time ticking<br/>
 				starts. During the time ticking, bar fills<br/>
 				with segments of new time points.</p>
 				<p>Time bar is full when it's
-				<a href="coefficients/demo.html#TimePoint">TP</a> at 100.</p>
-				<p>When the bar is full, new entity turn starts.</p>
+				<a href="coefficients/original.html#TimePoint">TP</a> maxed.</p>
+				<p>When the bar is full, new Player turn starts.</p>
 			</article>
+
+			<section>
+				<ul>
+					<li>
+						<h4>For Hero</h4>
+						<p class="key">
+							TP maximum = (305 - <b>SPD</b>) / <b>Game Speed</b>
+						</p>
+					</li>
+					<li>
+						<h4>For Enemy</h4>
+						<p>
+							After each <a href="coefficients/original.html#EnemyTP">TP</a> gets a new turn.
+						</p>
+					</li>
+				</ul>
+			</section>
 
 			<article>
 				<h4>Can be found above bottom bar in battle status bar.</h4>
@@ -234,12 +252,12 @@
 
 	<details>
 		<summary>
-			<img alt="Sword" src="https://github.com/Alexxx180/Desert-Rage/blob/f9aa1389b18bc2ea8ee9fc2d93eb37fc0f2c5475/WpfApp1/ATK2.png?raw=true">
+			<img alt="Sword" src="https://github.com/Alexxx180/Desert-Rage/blob/8544ade013db20cb23e3bf3bf55c793278dc02e2/WpfApp1/Resources/Images/Menu/Status/Stats/ATK2.png?raw=true">
 			Attack
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=63">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=17">Demo</a>
 			</nav>
 			<br/>
 			<article id="Attack">
@@ -249,24 +267,40 @@
 
 			<article>
 				<table>
-					<tr><td>Ray</td>
-					<td>ATK</td>
-					<td>25</td></tr>
+					<tr>
+						<td></td>
+						<td>ATK</td>
+						<td>DEF</td>
+						<td>SPD</td>
+						<td>SPL</td>
+					</tr>
 
-					<tr><td>Spider</td>
-					<td>DEF</td>
-					<td>0</td></tr>
+					<tr>
+						<td>Ray</td>
+						<td>25</td>
+						<td>..</td>
+						<td>..</td>
+						<td>..</td>
+					</tr>
+
+					<tr>
+						<td>Spider</td>
+						<td>..</td>
+						<td>3</td>
+						<td>10</td>
+						<td>0</td>
+					</tr>
 				</table>
 
 				<p class="key">
-					<a href="coefficients/demo.html#DamageATK">Damage</a> = Ray - Spider = 25 - 0 = 25
+					<a href="coefficients/original.html#DamageATK">Damage</a> = Ray - Spider = 25 - 0 = 25
 				</p>
 			</article>
 
 			<article>
 				<h4>Can be found in:</h4>
 				<section>
-					Left column in the middle of content of <a href="#">Game menu</a> tabs:
+					Left column in the middle of content of <a href="../../../original.html#GameMenu">Game menu</a> tabs:
 					<ul>
 						<li>Status</li>
 						<li>Equipment</li>
@@ -278,12 +312,12 @@
 
 	<details>
 		<summary>
-			<img alt="Shield" src="https://github.com/Alexxx180/Desert-Rage/blob/f9aa1389b18bc2ea8ee9fc2d93eb37fc0f2c5475/WpfApp1/DEF2.png?raw=true">
+			<img alt="Shield" src="https://github.com/Alexxx180/Desert-Rage/blob/8544ade013db20cb23e3bf3bf55c793278dc02e2/WpfApp1/Resources/Images/Menu/Status/Stats/DEF2.png?raw=true">
 			Defence
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=17">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=26">Demo</a>
 			</nav>
 			<br/>
 			<article id="Defence">
@@ -293,17 +327,33 @@
 			
 			<article>
 				<p class="key">
-					Saved <b>HP</b> = Fighter <b>ATK</b> - <a href="coefficients/demo.html#DamageATK">Damage</a> = Target <b>DEF</b>
+					Saved <b>HP</b> = Fighter <b>ATK</b> - <a href="coefficients/original.html#DamageATK">Damage</a> = Target (<b>DEF</b> + <b>SPL</b> * <b>AGL</b> * 0.005)
 				</p>
 
 				<table>
-					<tr><td>Spider</td>
-					<td>ATK</td>
-					<td>25</td></tr>
+					<tr>
+						<td></td>
+						<td>ATK</td>
+						<td>DEF</td>
+						<td>SPD</td>
+						<td>SPL</td>
+					</tr>
 
-					<tr><td>Ray</td>
-					<td>DEF</td>
-					<td>15</td></tr>
+					<tr>
+						<td>Ray</td>
+						<td></td>
+						<td>15</td>
+						<td>15</td>
+						<td>25</td>
+					</tr>
+
+					<tr>
+						<td>Spider</td>
+						<td>25</td>
+						<td>..</td>
+						<td>..</td>
+						<td>..</td>
+					</tr>
 				</table>
 
 				<p class="key">
@@ -315,7 +365,7 @@
 				<h4>Can be found in:</h4>
 				<section>
 					Left column in the middle of content of
-					<a href="../../../demo.html#GameMenu">
+					<a href="../../../original.html#GameMenu">
 					Game menu</a> tabs:
 					<ul>
 						<li>Status</li>
@@ -333,20 +383,20 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=52">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=19">Demo</a>
 			</nav>
 			<br/>
 			<article id="Speed">
 				<h4>Also known as <span class="key">SPD</span> for short.</h4>
-				<p>Determines entity <a href="coefficients/demo.html#TimePoint">TP</a>s recovering and
-					<a href="../events/demo.html#EscapeChance">escape chance</a>.</p>
+				<p>Determines entity <a href="coefficients/original.html#TimePoint">TP</a>s recovering and
+					<a href="../events/original.html#EscapeChance">escape chance</a>.</p>
 			</article>
 
 			<article>
 				<h4>Can be found in:</h4>
 				<section>
 					Left column in the middle of content of
-					<a href="../../../demo.html#GameMenu">Game menu</a> tabs:
+					<a href="../../../original.html#GameMenu">Game menu</a> tabs:
 					<ul>
 						<li>Status</li>
 						<li>Equipment</li>
@@ -363,7 +413,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=163">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=195">Demo</a>
 			</nav>
 			<br/>
 			<article id="Special">
@@ -374,7 +424,7 @@
 							<h4>For hero</h4>
 							<p>Determines average skills power.</p>
 							<p class="key">
-								<a href="items/skills/demo.html#Cure">Cure</a> = <b>SPL</b> * 2
+								<a href="items/skills/original.html#Cure">Cure</a> = <b>SPL</b> * 2
 							</p>
 						</article>
 					</li>
@@ -385,7 +435,7 @@
 				<h4>Can be found in:</h4>
 				<section>
 					Left column in the middle of content of
-					<a href="../../../demo.html#GameMenu">Game menu</a> tabs:
+					<a href="../../../original.html#GameMenu">Game menu</a> tabs:
 					<ul>
 						<li>Status</li>
 						<li>Equipment</li>
@@ -398,9 +448,9 @@
 
 <nav>
 	<a href="../se.html">Battle</a>
-	<a href="demo.html" class="selected">Stats</a>
-	<a href="coefficients/demo.html">Coefficients</a>
-	<a href="items/demo.html">Items</a>
+	<a href="original.html" class="selected">Stats</a>
+	<a href="coefficients/original.html">Coefficients</a>
+	<a href="items/original.html">Items</a>
 </nav>
 
 <footer>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>DR - Demo - Coefficients</title>
+	<title>DR - Original - Coefficients</title>
 
 	<link rel="shortcut icon" href="../../../../../../../../../icons/desert-rage.ico" />
 	<link rel="stylesheet" href="../../../../../../../../../../../../styles/grid.css" />
@@ -13,8 +13,8 @@
 
 <header>
 	<a href="../../../../../about.html">Desert Rage</a>
-	<a href="demo.html" class="selected">Demo</a>
-    <a href="original.html">Original</a>
+	<a href="demo.html">Demo</a>
+    <a href="original.html" class="selected">Original</a>
     <a href="se.html">Serious Edition</a>
 </header>
 
@@ -26,28 +26,46 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=202">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=213">Demo</a>
 			</nav>
 			<br/>
 			<article>
 				<h4>Determines weakness against concrete skill.</h4>
 
-				<p class="left">Spider <span class="key">SW</span></p>
-				<table class="centered">
-					<tr>
-						<td>Torch</td>
-						<td>Whip</td>
-						<td>Super</td>
-					</tr>
+				<p>Spider <span class="key">SW</span></p>
 
-					<tr>
-						<td>2</td>
-						<td>1</td>
-						<td>1</td>
-					</tr>
-				</table>
+				<section>
+					<table class="left centered">
+						<tr>
+							<td>Torch</td>
+							<td>Whip</td>
+							<td>Slingshot</td>
+						</tr>
 
-				<p>So, <a href="../items/skills/demo.html#Torch">Torch</a> will
+						<tr>
+							<td>2</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</table>
+
+					<table class="left centered">
+						<tr>
+							<td>Super</td>
+							<td>Whirl</td>
+							<td>Quake</td>
+						</tr>
+
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</table>
+					<br/>
+				</section>
+
+				<p>So, <a href="../items/skills/original.html#Torch">Torch</a> will
 					do twice more <a href="#DamageSPL">damage</a>.</p>
 			</article>
 		</section>
@@ -60,7 +78,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/GaSAsZIJEfU?t=45">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=417">Demo</a>
 			</nav>
 			<br/>
 			<article>
@@ -94,7 +112,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=26">Demo</a>
 			</nav>
 			<br/>
 			<article>
@@ -104,7 +122,7 @@
 						<article>
 							<h4>For <b>Attack</b> option</h4>
 							<p class="key" id="DamageATK">
-								Damage = Fighter <b>ATK</b> - Target <b>DEF</b>
+								Damage = Fighter <b>ATK</b> - Target (<b>DEF</b> + <b>SPL</b> * <b>AGL</b> * 0.005)
 							</p>
 						</article>
 					</li>
@@ -134,7 +152,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=16">Demo</a>
 			</nav>
 			<br/>
 			<article id="BT">
@@ -153,7 +171,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+				<a href="https://youtu.be/gUarkdN3BrM?t=16">Demo</a>
 			</nav>
 			<br/>
 			<article id="TimePoint">
@@ -169,15 +187,15 @@
 						<article>
 							<b>For hero</b>
 							<p class="key">
-								TP = (4.8 <a href="#BT">BT</a> / <a href="../demo.html#Speed">SPD</a>)
+								TP = 1 / 50 <a href="#BT">BT</a>
 							</p>
 						</article>
 					</li>
 					<li>
-						<article>
+						<article id="EnemyTP">
 							<b>For enemy</b>
 							<p class="key">
-								TP = 0.5 <a href="#BT">BT</a>
+								TP = 10 <a href="#BT">BT</a> - <b>SPD</b>
 							</p>
 						</article>
 					</li>
@@ -185,13 +203,32 @@
 			</article>
 		</section>
 	</details>
+
+	<details>
+		<summary>
+			Game Speed
+		</summary>
+		<section>
+			<article>
+				<h4>Determines overall battle speed</h4>
+				<p>Can be set by player.</p>
+			</article>
+
+			<article>
+				<h4>Can be found as:</h4>
+				<p>Left slider of content of
+				Settings <a href="../../../original.html#GameMenu">
+				Game menu</a> tab.</p>
+			</article>
+		</section>
+	</details>
 </main>
 
 <nav>
-	<a href="../../demo.html">Battle</a>
-	<a href="../demo.html">Stats</a>
-	<a href="demo.html" class="selected">Coefficients</a>
-	<a href="../items/demo.html">Items</a>
+	<a href="../../original.html">Battle</a>
+	<a href="../original.html">Stats</a>
+	<a href="original.html" class="selected">Coefficients</a>
+	<a href="../items/original.html">Items</a>
 </nav>
 
 <footer>
