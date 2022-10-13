@@ -5,17 +5,30 @@
 	cursor: pointer;
 }
 
+.zone {
+	color: rgb(183, 183, 183);
+	background: rgb(40, 40, 40);
+	border-color: rgb(40, 40, 40);
+}
+
 td {
 	padding: 5pt;
 }
 
-.b {
+.b, .b2 {
 	border-width: 0px;
 	border-style: solid;
+}
+
+.b {
 	border-color: rgb(183, 183, 183);
 }
 
-.b.a {
+.b2 {
+	border-color: rgb(127, 127, 127);
+}
+
+.b2.a, .b.a {
 	border-width: 2px;
 }
 
