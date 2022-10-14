@@ -1,0 +1,15 @@
+.closed {
+	display: inline;
+}
+
+.opened {
+	display: none;
+}
+
+details[open] > summary > .opened {
+	display: inline;
+}
+
+details[open] > summary > .closed {
+	display: none;
+}

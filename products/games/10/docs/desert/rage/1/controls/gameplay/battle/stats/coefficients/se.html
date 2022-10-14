@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>DR - Original - Coefficients</title>
+	<title>DR - SE - Coefficients</title>
 
 	<link rel="shortcut icon" href="../../../../../../../../../icons/desert-rage.ico" />
 	<link rel="stylesheet" href="../../../../../../../../../../../../styles/grid.css" />
@@ -14,59 +14,33 @@
 <header>
 	<a href="../../../../../about.html">Desert Rage</a>
 	<a href="demo.html">Demo</a>
-    <a href="original.html" class="selected">Original</a>
-    <a href="se.html">Serious Edition</a>
+    <a href="original.html">Original</a>
+    <a href="se.html" class="selected">Serious Edition</a>
 </header>
 
 <main class="stretch">
 	<details>
 		<summary>
-			<span class="key">SW</span>
-			Skill weakness
+			<span class="key">DP</span>
+			Dependency
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/gUarkdN3BrM?t=213">Demo</a>
+				<a href="https://youtu.be/P3XjS9sJ02c?t=58">Demo</a>
 			</nav>
 			<br/>
 			<article>
-				<h4>Determines weakness against concrete skill.</h4>
-
-				<p>Spider <span class="key">SW</span></p>
-
-				<section>
-					<table class="left centered">
-						<tr>
-							<td>Torch</td>
-							<td>Whip</td>
-							<td>Slingshot</td>
-						</tr>
-
-						<tr>
-							<td>2</td>
-							<td>1</td>
-							<td>1</td>
-						</tr>
-					</table>
-
-					<table class="left centered">
-						<tr>
-							<td>Super</td>
-							<td>Whirl</td>
-							<td>Quake</td>
-						</tr>
-
-						<tr>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-						</tr>
-					</table>
-					<br/>
-				</section>
-
-				<p>So, <a href="../items/skills/original.html#Torch">Torch</a> will
-					do twice more <a href="#DamageSPL">damage</a>.</p>
+				<h4>Determines skill power dependency from...</h4>
+				<ul>
+					<li>Value</li>
+					<li>
+						<p>Stat</p>
+						<ul>
+							<li><b>SPL</b></li>
+							<li><b>ATK</b> + <b>SPL</b></li>
+						</ul>
+					</li>
+				</ul>
 			</article>
 		</section>
 	</details>
@@ -78,7 +52,7 @@
 		</summary>
 		<section>
 			<nav>
-				<a href="https://youtu.be/gUarkdN3BrM?t=417">Demo</a>
+				<a href="https://youtu.be/P3XjS9sJ02c?t=58">Demo</a>
 			</nav>
 			<br/>
 			<article>
@@ -94,12 +68,11 @@
 							<td>Whip</td>
 						</tr>
 						<tr>
-							<td>1.25</td>
-							<td>1.5</td>
+							<td>2.0</td>
+							<td>3.5</td>
 						</tr>
 					</table>
-					<p>So <span class="key">Whip > Torch</span>
-					against monster without any weakness.</p>
+					<p>So <span class="key">Whip > Torch</span>.</p>
 				</article>
 			</article>
 		</section>
@@ -120,17 +93,25 @@
 				<ul>
 					<li>
 						<article>
-							<p>For <b>Attack</b> option / Enemy</p>
+							<p>For <b>Attack</b> option</p>
 							<p class="key" id="DamageATK">
-								Damage = Fighter <b>ATK</b> - Target (<b>DEF</b> + <b>SPL</b> * <b>AGL</b> * 0.005)
+								Damage = Fighter <b>ATK</b> - Target <b>DEF</b>
 							</p>
 						</article>
 					</li>
 					<li>
 						<article>
-							<p4>For <b>Skills</b> use</p>
+							<p>For <b>Skills</b> use</p>
 							<p class="key" id="DamageSPL">
-								Damage = Fighter <b>SPL</b> * <b>SC</b> * Target <b>Skill WK</b>
+								Damage = <b>DP</b> * <b>SC</b> - Target <b>DEF</b>
+							</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<p>For <b>Enemy</b></p>
+							<p class="key" id="DamageEnemy">
+								Damage = Fighter (<b>ATK</b> + <b>SPL</b>) - Target <b>DEF</b>
 							</p>
 						</article>
 					</li>
@@ -138,9 +119,7 @@
 			</article>
 
 			<article>
-				<h4>Can be found on the midle battle message panel.</h4>
-				<p>Although it will stay only few seconds before<br/>
-				dissapear or will be overflown by another message</p>
+				<h4>You can determine it by HP fading out.</h4>
 			</article>
 		</section>
 	</details>
@@ -157,7 +136,7 @@
 			<br/>
 			<article id="BT">
 				<h4>Determines time ticking speed const.</h4>
-				<p>By default: <span class="key">50 
+				<p>By default: <span class="key">100 
 					<a href="https://en.wikipedia.org/wiki/Millisecond">ms</a>
 				</span>.</p>
 			</article>
@@ -181,25 +160,10 @@
 
 			<article>
 				<h4>Calculation</h4>
-				<p>Time values in battle based on different factors.</p>
-				<ul>
-					<li>
-						<article>
-							<b>For hero</b>
-							<p class="key">
-								TP = 1 / 50 <a href="#BT">BT</a>
-							</p>
-						</article>
-					</li>
-					<li>
-						<article id="EnemyTP">
-							<b>For enemy</b>
-							<p class="key">
-								TP = 10 <a href="#BT">BT</a> - <b>SPD</b>
-							</p>
-						</article>
-					</li>
-				</ul>
+				<p>Time points can be calculated that way.</p>
+				<p class="key">
+					TP = 1 <a href="#BT">BT</a> / <a href="../se.html#TimeBT">Time</a>
+				</p>
 			</article>
 		</section>
 	</details>
@@ -216,8 +180,8 @@
 
 			<article>
 				<h4>Can be found as:</h4>
-				<p>Left slider of content of
-				Settings <a href="../../../original.html#GameMenu">
+				<p>Bottom slider of content of
+				Settings <a href="../../../se.html#GameMenu">
 				Game menu</a> tab.</p>
 			</article>
 		</section>
@@ -225,10 +189,10 @@
 </main>
 
 <nav>
-	<a href="../../original.html">Battle</a>
-	<a href="../original.html">Stats</a>
-	<a href="original.html" class="selected">Coefficients</a>
-	<a href="../items/original.html">Items</a>
+	<a href="../../se.html">Battle</a>
+	<a href="../se.html">Stats</a>
+	<a href="se.html" class="selected">Coefficients</a>
+	<a href="../items/se.html">Items</a>
 </nav>
 
 <footer>
