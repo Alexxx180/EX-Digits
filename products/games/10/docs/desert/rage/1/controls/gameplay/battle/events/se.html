@@ -86,9 +86,9 @@
 				<h4>Escape chance</h4>
 
 				<p class="key" id="EscapeChance">
-					∀escape ∈ Successful escape : (escape > 1)<br/><br/>
-					escape = (Hero - Fastest enemy) <b>SPD</b><br/><br/>
-					∀enemy ∈ Enemies : (enemy ≤ Fastest enemy)
+					∀escape ∈ Successful escape : (escape = 1)<br/><br/>
+					1 ≤ escape < barrier<br/><br/>
+					barrier = (All enemies / Hero) <b>SPD</b>
 				</p>
 
 				<table class="left">
@@ -114,7 +114,10 @@
 				</table>
 
 				<p class="left key">
-					escape = 15 - 10 = 5<br/><br/>
+					barrier = 30 / 15 = 2<br/><br/>
+					1 ≤ escape < 2<br/>
+					escape = 1<br/>
+					1 ≤ 1 < 2<br/>
 					escape ∈ Successful escape<br/><br/>
 					<b>Can Escape</b>
 				</p>
