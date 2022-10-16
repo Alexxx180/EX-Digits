@@ -7,6 +7,14 @@ body {
 	color: rgb(127, 127, 127);
 }
 
+table {
+  border-spacing: 10px;
+}
+
+td {
+	padding: 0px 10px;
+}
+
 .digits {
 	text-align: right;
 }
@@ -55,19 +63,22 @@ a, h4 {
 
 a {
 	background: rgb(40, 40, 40);
-	padding: 5pt;
+	padding: 3px 5pt;
 }
 
 nav > a {
 	margin: 1px;
 }
 
-ul > li, ol > li, header > a {
-	margin: 5pt;
+header > a {
+	margin: 2pt;
+}
+
+header > a, nav > a, .size24 {
+	font-size: 24px;
 }
 
 header > a, nav > a {
-	font-size: 24px;
 	float: left;
 
 	text-decoration: none;
@@ -76,8 +87,7 @@ header > a, nav > a {
 	appearance: button;
 }
 
-header > a:active, header > a:hover,
-nav > a:active, nav > a:hover, .selected {
+a:active, a:hover, .selected {
     background: rgb(235, 235, 235);
     color: rgb(20, 20, 20);
 }
