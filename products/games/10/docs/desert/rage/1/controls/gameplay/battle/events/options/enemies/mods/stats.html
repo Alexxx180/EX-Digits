@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Enemy Stats</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			Drop
+		</summary>
+		<section>
+			<article id="Drop">
+				<h4>Item reward with chance 12.5%</h4>
+				
+				<p><code>
+					"Drop": 6
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Size
+		</summary>
+		<section>
+			<article id="Size">
+				<section>
+					<article>
+						<h4>Notes</h4>
+						<p>Since battlefield 5 x 3 fixed size<br/>
+						think about enemy space wisely.</p>
+						<p>Enemy bigger than 3 x 3 won't<br/>
+						showing properly in bestiary</p>
+						<p>Values must be less or equal 2 ^ 31.</p>
+						<p>Values can't be negative or float.</p>
+					</article>
+					
+					<article>
+						<h4>Recommendations</h4>
+						<p>Bosses should be bigger than rest<br/>
+						of enemies. So their size 3 x 3.</p>
+						<p>Have at least one enemy with 1 x 1<br/>
+						size to compensate bigger ones.</p>
+						<p>The bigger enemies often associated<br/>
+						with powerful opponents</p>
+					</article>
+				</section>
+				
+				<p><code>
+					"Size":{ "X":3, "Y":3 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Experience
+		</summary>
+		<section>
+			<article id="Experience">
+				<h4>Determines experience on enemy defeat</h4>
+				<p>Value must be less or equal 255.</p>
+				<p>Value can't be negative or float.</p>
+				
+				<p><code>
+					"Experience": 175
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">?</span>
+			Is Learned
+		</summary>
+		<section>
+			<article id="Experience">
+				<h4>Determines analyze foe state</h4>
+				<ul>
+					<li><code>true</code> - hero already analyzed foe</li>
+					<li><code>false</code> - foe not get analyzed yet</li>
+				</ul>
+				<p>By default set to <code>false</code></p>
+				
+				<p><code>
+					"IsLearned": false
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">X</span>
+			Strategy
+		</summary>
+		<section>
+			<article id="Strategy">
+				<h4>Determines foe <a href="../kinds/se.html">kind</a></h4>
+				<ul>
+					<li>0 - Fighter</li>
+					<li>1 - Poisonous</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Recommendations</h4>
+				<p>On every location always should<br/>
+				be </p>
+
+				<p><code>
+					"Strategy": 0
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">HP</span>
+			Health points
+		</summary>
+		<section>
+			<article id="Strategy">
+				<ul>
+					<li>IsMax - is current HP matches max?</li>
+					<li>IsEmpty - is current HP equals 0?</li>
+					<li>IsSealed - is max HP equals minimum?</li>
+				</ul>
+				<p>Values must be less or equal 65355.</p>
+				<p>Values can't be negative or float.</p>
+			</article>
+
+			<article>
+				<p><code>
+					"Hp":{ "IsMax":true, "IsEmpty":false, "IsSealed":false,<br/>
+					 "Minimum":0, "Current":500, "Max":500 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">.iI</span>
+			Stats
+		</summary>
+		<section>
+			<article>
+				<h4>Recommendations</h4>
+				<p>Pay attention to average hero LV<br/>
+				during usual level walkthrough.</p>
+				<p>Values must be less or equal 255.</p>
+				<p>Values can't be negative or float.</p>
+				<p><code>
+					"Stats": {<br/>
+				      "Attack": 120,<br/>
+				      "Defence": 100,<br/>
+				      "Speed": 85,<br/>
+				      "Special": 95<br/>
+				    }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">Status</span> info
+		</summary>
+		<section>
+			<article>
+				<p>Since you can't apply any status to<br/>
+				enemy by default - considered to<br/>
+				set <code>null</code> and 0 values.</p>
+				<p><code>
+					"Time":{ "IsMax":true, "IsEmpty":true, "IsSealed":true,<br/>
+		               "Minimum":0, "Current":0, "Max":0 },<br/>
+		            "Icon":null,<br/>
+		            "Description":null,<br/>
+		            "Name":null
+				</code></p>
+				<p>You need to duplicate this up to<br/>
+				the number of statuses.</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">Result</span>
+		</summary>
+		<section>
+			<article>
+				<p>
+					<code>"Theme":"NewTemple/UghZan2.mp3",<br/>
+				      "ID":12,<br/>
+				      "Drop":6,<br/>
+				      "Size":{ "X":3, "Y":3 },<br/>
+				      "Death":"Defeat/Bosses/UghZan2.mp3",<br/>
+				      "Experience":175,<br/>
+				      "IsLearned":false,<br/>
+				      "Strategy":0,<br/>
+				      "Hp":{ "IsMax":true, "IsEmpty":false, "IsSealed":false,<br/>
+				      "Minimum":0, "Current":500, "Max":500 },<br/>
+				      "Stats":{ "Attack":120, "Defence":100, "Speed":85, "Special":90 },<br/>
+				      "Action":"/Resources/Media/Images/Battle/Bosses/UghZan2/Action.svg",<br/>
+				      "StatusInfo":[<br/>
+				         {<br/>
+				            "Time":{ "IsMax":true, "IsEmpty":true, "IsSealed":true,<br/>
+				               "Minimum":0, "Current":0, "Max":0 },<br/>
+				            "Icon":null,<br/>
+				            "Description":null,<br/>
+				            "Name":null<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":true, "IsEmpty":true, "IsSealed":true,<br/>
+				               "Minimum":0, "Current":0, "Max":0 },<br/>
+				            "Icon":null,<br/>
+				            "Description":null,<br/>
+				            "Name":null<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":true, "IsEmpty":true, "IsSealed":true,<br/>
+				               "Minimum":0, "Current":0, "Max":0 },<br/>
+				            "Icon":null,<br/>
+				            "Description":null,<br/>
+				            "Name":null<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":true, "IsEmpty":true, "IsSealed":true,<br/>
+				               "Minimum":0, "Current":0, "Max":0 },<br/>
+				            "Icon":null,<br/>
+				            "Description":null,<br/>
+				            "Name":null<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":true, "IsEmpty":true, "IsSealed":true,<br/>
+				               "Minimum":0, "Current":0, "Max":0 },<br/>
+				            "Icon":null,<br/>
+				            "Description":null,<br/>
+				            "Name":null<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":true, "IsEmpty":true, "IsSealed":true,<br/>
+				               "Minimum":0, "Current":0, "Max":0 },<br/>
+				            "Icon":null,<br/>
+				            "Description":null,<br/>
+				            "Name":null<br/>
+				         }<br/>
+				      ],<br/>
+				      "Icon":"/Resources/Media/Images/Battle/Bosses/UghZan2/Idle.svg",<br/>
+				      "Description":"Who are you?!",<br/>
+				      "Name":"Ugh-Zan II"
+					</code>
+				</p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../../../../contents/se.html">Contents</a>
+	<a href="../se.html">Enemies</a>
+	<a href="media.html">Media</a>
+	<a href="stats.html" class="selected">Stats</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Equipment Mods</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">!</span>
+			Limits
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Only 5 items per equipment type (including bare).</li>
+					<li>You <u>must</u> publish under our <a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">license</a>.</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			File location
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Go to game folder.</li>
+					<li>Go to "Resources/Media/Data/Items/Equipment.json".</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">?</span>
+			Type
+		</summary>
+		<section>
+			<article>
+				<p>Available types</p>
+				<ul>
+					<li>0 - Weapon</li>
+					<li>1 - Armor</li>
+					<li>2 - Leggings</li>
+					<li>3 - Boots</li>
+				</ul>
+				<p><code>
+					"Type": 0
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">♫</span>
+			Noise
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>MP3 format</li>
+					<li>Duration ≤ 2 seconds</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>Go to "Resources/Media/OST/Noises/Weapons".<br/>
+					If there is no folder, create one</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path to your file, like so.</p>
+					<p><code>
+						"Noise": "Weapons/Punch.mp3"
+					</code></p>
+				</section>
+			</article>
+
+			<article>
+				<h4>Armor doesn't sound</h4>
+				<p>So use special <code>null</code> value.</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Power
+		</summary>
+		<section>
+			<article>
+				<h4>Weapon</h4>
+				<p>Determines the <b>ATK</b> bonus after equipping.</p>
+			</article>
+			<article>
+				<h4>Armor, Leggings, Boots</h4>
+				<p>Determines the <b>DEF</b> bonus after equipping.</p>
+			</article>
+			<article>
+				<p><code>"Power": 50</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<img src="https://github.com/Alexxx180/Desert-Rage/blob/2f289da6cd7ebc95516d63418806575a83d03aa4/Desert-Rage/Resources/Media/Images/Menu/Stats/Attack.svg?raw=true">
+			Icon
+		</summary>
+		<section>
+			<article>
+				<h4>Equipment haven't any icon</h4>
+				<p>Icon shows stat which will be increased.</p>
+				<ul>
+					<li>
+						<section>
+							<p><b>For Weapon</b></p>
+							<p><code>
+								"Icon": "/Resources/Media/Images/Menu/Stats/Attack.svg"
+							</code></p>
+						</section>
+					</li>
+					<li>
+						<section>
+							<p><b>For Armor, Leggings, Boots</b></p>
+							<p><code>
+								"Icon": "/Resources/Media/Images/Menu/Stats/Defence.svg"
+							</code></p>
+						</section>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Description
+		</summary>
+		<section id="Description">
+			<article>
+				<h4>Recommendations</h4>
+				<p>Great description should be short and unique.</p>
+				<p><code>
+					"Description": "Good morning, sunshine!"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Name
+		</summary>
+		<section id="Name">
+			<article>
+				<h4>Recommendations</h4>
+				<p>Good name should be short and<br/> contain 1-2 words.</p>
+				<p><code>
+					"Name": "K.O. Glove"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">Result</span>
+		</summary>
+		<section>
+			<article>
+				<p>
+					<code><span>"Type": 0,</span><br/>
+					    <span>"Noise": "Weapons/Punch.mp3",</span><br/>
+					    <span>"Power": 50,</span><br/>
+					    <span>"Icon": "Resources/Media/Images/Menu/Stats/Attack.svg",</span><br/>
+					    <span>"Description": "Good morning, sunshine!",</span><br/>
+					    <span>"Name": "K.O. Glove",</span>
+					</code>
+				</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">EN</span>
+			Localization
+			<span class="key">RU</span>
+		</summary>
+		<section>
+			<article>
+				<p>To made mod work correctly on both<br/>
+				english and russian devices duplicate<br/>
+				the file.</p>
+				<p>Then change file extension from<br/>
+				<code>.json</code>  to  <code>.ru-RU.json</code></p>
+				<p>Now edit <a href="#Name">Name</a> and <a href="#Description">Description</a> to a russian equivalent.</p>
+				<p><code>
+					"Name": "Перчатка 'До-свидания!'",<br/>
+				    "Description": "Доброе утро, солнышко!",
+				</code></p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../../../contents/se.html">Contents</a>
+	<a href="armor/se.html">Equipment</a>
+	<a href="mods.html" class="selected">Mods</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>
