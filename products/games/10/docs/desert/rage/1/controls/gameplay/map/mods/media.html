@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Map Media</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">!</span>
+			Limits
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Only 17 tiles.</li>
+					<li>You <u>must</u> publish under our <a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">license</a>.</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Files location
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Go to game folder.</li>
+					<li>
+						<article>
+							<p>Go to "Resources/Media/Data/Map/NewTemple".</p>
+							<p>If there is no folder, duplicate and rename one.</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<p>Check "Map.json" file to work with main content.</p>
+							<p>Check "Info.json" file to edit interaction messages.</p>
+						</article>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">Back</span>
+			cover
+		</summary>
+		<section>
+			<article>
+				<h4>Map floor</h4>
+				<ul>
+					<li>SVG format</li>
+					<li>32 x 30</li>
+					<li>Clear borders of the drawing</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<p>Go to "Resources/Media/Images/Locations/NewTemple".</p>
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"BackCover": "Resources/Media/Images/Locations/NewTemple/Way.svg"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">Battle</span>
+			back
+		</summary>
+		<section>
+			<article>
+				<h4>Battle scene background</h4>
+				<ul>
+					<li>SVG format</li>
+					<li>1280 x 720</li>
+					<li>Clear borders of the drawing</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<p>Go to "Resources/Media/Images/Battle/Background".</p>
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"BattleBack": "Resources/Media/Images/Battle/Background/NewTemple.svg"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">H</span>
+			Tile codes
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>SVG format</li>
+					<li>32 x 30</li>
+					<li>Clear borders of the drawing</li>
+					<li>
+						<article>
+							<p>Transparent background</p>
+							<h5>Interactives only</h5>
+						</article>
+					</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<p>Go to "/Resources/Media/Images/Locations/NewTemple".</p>
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your files here</li>
+				</ol>
+
+				<section>
+					<article>
+						<p>Specify path from game folder to your file, like so.</p>
+						<p><code>
+							"H": "/Resources/Media/Images/Locations/NewTemple/Wall.svg",<br/>
+							"X": "/Resources/Media/Images/Locations/NewTemple/Artifact.svg",
+						</code></p>
+						<p>You will need an image for<br/>
+						each tile used on the map.</p>
+						<p>If no path specified - tile<br/>
+						will be transparent.</p>
+						<p>You can also use game presets<br/>
+						beggining with '/' sign.</p>
+						<p><code>
+							".": "/Resources/Media/Images/Locations/Total/Transparent.svg",<br/>
+							"_": "/Resources/Media/Images/Locations/Total/Button.svg",<br/>
+							"!": "/Resources/Media/Images/Locations/Total/Transparent.svg",<br/>
+							"#": "/Resources/Media/Images/Locations/Total/Lock.svg"
+						</code></p>
+					</article>
+					
+					<article>
+						<p><b>Other presets</b></p>
+						<p><code>
+							"&lt;": "/Resources/Media/Images/Locations/Total/Lever/Off.svg",<br/>
+							"&gt;": "/Resources/Media/Images/Locations/Total/Lever/On.svg",<br/>
+							"?": "/Resources/Media/Images/Locations/Total/Surprise.svg",<br/>
+							":": "/Resources/Media/Images/Locations/Total/Spikes.svg",<br/>
+							"S": "/Resources/Media/Images/Locations/Total/SafeArea.svg",<br/>
+							"$": "/Resources/Media/Images/Locations/Total/Chest/Closed.svg",<br/>
+							"E": "/Resources/Media/Images/Locations/Total/Chest/Opened.svg",<br/>
+							"K": "/Resources/Media/Images/Locations/Total/Key.svg",<br/>
+							"@": "/Resources/Media/Images/Locations/Total/Table.svg"
+						</code></p>
+						<h5>Note: when using &lt; and &gt; signs<br/>
+						escape them with '\u003C' and '\u003E' to <br/>
+						make it work correctly on all devices.</h5>
+					</article>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">♫.</span>
+			Music peace
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>MP3 format</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>Go to "Resources/Media/OST/Music/NewTemple".<br/>
+					If there is no folder, create one
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"MusicPeace": "Resources/Media/OST/Music/NewTemple/Peace.mp3"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">♫!</span>
+			Music fight
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>MP3 format</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>Go to "Resources/Media/OST/Music/NewTemple".<br/>
+					If there is no folder, create one
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"MusicFight": "Resources/Media/OST/Music/NewTemple/Fight.mp3"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Next chapter
+		</summary>
+		<section>
+			<article id="NextChapter">
+				<h4>Level to be load after collecting artifact</h4>
+				<p><code>
+					"NextChapter": "SuperTemple"
+				</code></p>
+			</article>
+
+			<article>
+				<p><b>Explanation</b></p>
+				<p>After end of the previous level game will<br/>
+				search for folder 'SuperTemple' in:</p>
+				<p><code>Resources/Media/Data/Map</code></p>
+				<p>And, if find - load "Map.json" file.</p>
+				<h5>If no name specified - game closes.</h5>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">Info</span>
+			messages
+		</summary>
+		<section>
+			<article>
+				<p>Check "Info.json"</p>
+				<p>Input full name of your location.</p>
+				<p id="Name"><code>
+					"Name": "New desert temple"
+				</code></p>
+			</article>
+
+			<article id="Messages">
+				<h4>Messages</h4>
+				<p>Text after reading sign or opening<br/>
+				the chest at the defined position.</p>
+				<p><code>
+					"Messages": {
+						"3:3": "Found 'K.O. Glove'",
+					}
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">EN</span>
+			Localization
+			<span class="key">RU</span>
+		</summary>
+		<section>
+			<article>
+				<p>To made mod work correctly on both<br/>
+				english and russian devices duplicate<br/>
+				the file.</p>
+				<p>Then change file extension from<br/>
+				<code>.json</code>  to  <code>.ru-RU.json</code></p>
+				<p>Now edit <a href="#Name">Name</a> and <a href="#Messages">Messages</a> to a russian equivalent.</p>
+				<p><code>
+					"Name": "Новый храм в пустыне"<br/>
+					"Messages": {
+						"3:3": "Найдена ' Перчатка 'До-свидания!' '",
+					}
+				</code></p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../contents/se.html">Contents</a>
+	<a href="../se.html">Map</a>
+	<a href="media.html" class="selected">Media</a>
+	<a href="placement.html">Placement</a>
+
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Map</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">X, Y</span>
+			Start
+		</summary>
+		<section>
+			<article>
+				<h4>Determines hero start position</h4>
+				<p>Hero will be set to that position<br/>
+				automatically after level loading.</p>
+				<p><code>
+					"Start": { "X": 5, "Y": 2 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Is time chamber?
+		</summary>
+		<section>
+			<article>
+				<h4>Determines level as time chamber</h4>
+				<ul>
+					<li>true - no enemies at the level,<br>
+					doom countdown starts.</li>
+					<li>false - usual level.</li>
+				</ul>
+
+				<p><code>
+					"IsTimeChamber": false
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">.iI</span>
+			Danger
+		</summary>
+		<section>
+			<article>
+				<h4>Determines random encounters frequency</h4>
+				<ul>
+					<li>IsZero - is 'X' and 'Y' equals 0?</li>
+					<li>X - bottom random chance border.</li>
+					<li>Y - top random chance border.</li>
+				</ul>
+				<p>When you are walking on the map hero<br/>
+				"ToBattle" steps slowly decrement to<br/>
+				0. When it happens - battle begins.</p>
+
+				<p>After end of the battle "ToBattle" steps<br/>
+				will be recalculated and set as a random<br/>
+				value between 'X' and 'Y'.</p>
+
+				<p>Values must be less or equal 2 ^ 31.</p>
+				<p>Values can't be negative.</p>
+
+				<p><code>
+					"Danger": { "IsZero": false, "X": 9, "Y": 27 }
+				</code></p>
+
+				<article>
+					<h5>If "IsTimeChamber" parameter is set<br/>
+					to <code>true</code> determines time to escape.</h5>
+					<ul>
+						<li>X - minutes.</li>
+						<li>Y - seconds.</li>
+					</ul>
+				</article>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">!</span>
+			Stage foes
+		</summary>
+		<section>
+			<article>
+				<h4>Determines foes on current location</h4>
+				
+				<p><code>
+					"StageFoes": [0, 1, 2, 3]
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">$</span>
+			Equipment
+		</summary>
+		<section>
+			<article>
+				<h4>Determines treasure positions</h4>
+				<ul>
+					<li>"4:3" - short treasure position<br/>
+					aka "X":4, "Y":3</li>
+				</ul>
+				
+				<p><code>
+					"Equipment": { "4:3": { "Kind": 0, "Set": 1 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">K#</span>
+			Gates
+		</summary>
+		<section>
+			<article>
+				<h4>Determines keys-gate positions</h4>
+				<ul>
+					<li>"3:2" - short key position<br/>
+					aka "X":3, "Y":2</li>
+					<li>X - gate row.</li>
+					<li>Y - gate column.</li>
+				</ul>
+				
+				<p><code>
+					"Gates": { "4:3": { "X":3, "Y": 2 } }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">T</span>
+			Warps
+		</summary>
+		<section>
+			<article>
+				<h4>Determines warp positions</h4>
+				<ul>
+					<li>"5:1" - short warp position<br/>
+					aka "X":5, "Y":1</li>
+					<li>X - warp destination row.</li>
+					<li>Y - warp destination column.</li>
+				</ul>
+				
+				<p><code>
+					"Warps": { "5:1": { "X":1, "Y": 1 } }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">!</span>
+			Bosses
+		</summary>
+		<section>
+			<article>
+				<h4>Determines boss positions</h4>
+				<ul>
+					<li>"2:2" - short boss position<br/>
+					aka "X":2, "Y":2</li>
+				</ul>
+				
+				<p><code>
+					"Bosses": { "2:2": 0 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">Map</span>
+		</summary>
+		<section>
+			<article>
+				<h4>Determines interaction logic</h4>
+				<p>When designing your own map,<br/>
+				remember that it should not be<br/>
+				too short and easily passable.
+				<p>However, it shouldn't take too<br/>
+				long for the player to find all the<br/>
+				secrets and interesting places.</p>
+				
+				<p>So here is small anti-example.</p>
+				<p><code>
+					[<br/>
+					["H","H","H","H","H"],<br/>
+					["H",".","X",".","H"],<br/>
+					["H",".","!",".","H"],<br/>
+					["H","H","#","H","H"],<br/>
+					["H",".",".","$","H"],<br/>
+					["H","T",".","_","H"],<br/>
+					["H","H","H","H","H"],<br/>
+					]
+				</code></p>
+				<p>Although it contains almost<br/>
+				all adventure elements to<br/>
+				make quest more exciting.</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">Result</span>
+		</summary>
+		<section>
+			<article>
+				<p>
+					<code>
+						"BackCover": "Resources/Media/Images/Locations/NewTemple/Way.svg",<br/>
+						"BattleBack": "Resources/Media/Images/Battle/Background/NewTemple.svg",<br/>
+						"TileCodes": {<br/>
+						"H": "/Resources/Media/Images/Locations/NewTemple/Wall.svg",<br/>
+						"X": "/Resources/Media/Images/Locations/NewTemple/Artifact.svg",<br/>
+						".": "/Resources/Media/Images/Locations/Total/Transparent.svg",<br/>
+						"_": "/Resources/Media/Images/Locations/Total/Button.svg",<br/>
+						"!": "/Resources/Media/Images/Locations/Total/Transparent.svg",<br/>
+						"#": "/Resources/Media/Images/Locations/Total/Lock.svg"<br/>
+						},<br/>
+						"MusicPeace": "Resources/Media/OST/Music/NewTemple/Peace.mp3",<br/>
+						"MusicFight": "Resources/Media/OST/Music/NewTemple/Fight.mp3",<br/>
+						"NextChapter": "SuperTemple",<br/>
+						"Start": { "X": 5, "Y": 2 },<br/>
+						"IsTimeChamber": false,<br/>
+						"Danger": { "IsZero": false, "X": 9, "Y": 27 },<br/>
+						"StageFoes": [0, 1, 2, 3],<br/>
+						"Equipment": { "4:3": { "Kind": 0, "Set": 1 },<br/>
+						"Gates": { "4:3": { "X":3, "Y": 2 } },<br/>
+						"Warps": { "5:1": { "X":1, "Y": 1 } },<br/>
+						"Bosses": { "2:2": 0 },<br/>
+						[<br/>
+						["H","H","H","H","H"],<br/>
+						["H",".","X",".","H"],<br/>
+						["H",".","!",".","H"],<br/>
+						["H","H","#","H","H"],<br/>
+						["H",".",".","$","H"],<br/>
+						["H","T",".","_","H"],<br/>
+						["H","H","H","H","H"]<br/>
+						]
+					</code>
+				</p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../contents/se.html">Contents</a>
+	<a href="../se.html" >Map</a>
+	<a href="media.html">Media</a>
+	<a href="placement.html" class="selected">Placement</a>
+
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>
