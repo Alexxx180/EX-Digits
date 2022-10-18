@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Hero Stats</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">LV</span>
+			Level
+		</summary>
+		<section>
+			<article id="LV">
+				<h4>Determines hero level at the start</h4>
+				<p>Values must be less or equal 255.</p>
+				<p>Values can't be negative or float.</p>
+			</article>
+
+			<article>
+				<p><code>
+					"Level": 1
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">HP</span>
+			Health points
+		</summary>
+		<section>
+			<article id="Strategy">
+				<ul>
+					<li>IsMax - is current HP matches max?</li>
+					<li>IsEmpty - is current HP equals 0?</li>
+					<li>IsSealed - is max HP equals minimum?</li>
+				</ul>
+				<p>Values must be less or equal 65355.</p>
+				<p>Values can't be negative or float.</p>
+			</article>
+
+			<article>
+				<p><code>
+					"Hp":{ "IsMax":true, "IsEmpty":false, "IsSealed":false,<br/>
+					 "Minimum":0, "Current":300, "Max":500 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">AP</span>
+			Action points
+		</summary>
+		<section>
+			<article id="Strategy">
+				<ul>
+					<li>IsMax - is current AP matches max?</li>
+					<li>IsEmpty - is current AP equals 0?</li>
+					<li>IsSealed - is max AP equals minimum?</li>
+				</ul>
+				<p>Values must be less or equal 65355.</p>
+				<p>Values can't be negative or float.</p>
+			</article>
+
+			<article>
+				<p><code>
+					"Ap":{ "IsMax":true, "IsEmpty":false, "IsSealed":false,<br/>
+					 "Minimum":0, "Current":500, "Max":500 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">EXP</span>
+			Experience
+		</summary>
+		<section>
+			<article id="Experience">
+				<h4>Determines experience at the start</h4>
+				<ul>
+					<li>IsMax - is current EXP matches max?</li>
+					<li>IsEmpty - is current EXP equals 0?</li>
+					<li>IsSealed - is max EXP equals minimum?</li>
+				</ul>
+				<p>Values must be less or equal 65355.</p>
+				<p>Values can't be negative or float.</p>
+			</article>
+
+			<article>
+				<p><code>
+					"Experience": { "IsMax": false, "IsEmpty": true, "IsSealed": false,<br/>
+						"Minimum": 0, "Current": 0, "Max": 10 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">+</span>
+			Next level
+		</summary>
+		<section>
+			<article id="ToNextLevel">
+				<h4>Determines experience to the next levels</h4>
+				<p>Values must be less or equal 65355.</p>
+				<p>Values can't be negative or float.</p>
+				<p>You can edit next stats in <code>Next.json</code> file.</p>
+			</article>
+
+			<article>
+				<p><code>
+					{ "Minimum": 0, "Current": 0, "Max": 24 }
+				</code></p>
+				<p>You need to duplicate this up to<br/>
+				the number of levels in game.</p>
+				<h5>To note: make sure that your levels<br/>
+				count is less or equal 255 otherwise<br/>
+				hero will return to first level or<br/>
+				it may crash the game</h5>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">.iI</span>
+			Stats
+		</summary>
+		<section>
+			<article>
+				<h4>Determines hero stats at the start</h4>
+				<p>Pay attention to average enemies stats<br/>
+				during usual level walkthrough.</p>
+				<p>Values must be less or equal 255.</p>
+				<p>Values can't be negative or float.</p>
+				<p><code>
+					"Stats": {<br/>
+				      "Attack": 120,<br/>
+				      "Defence": 100,<br/>
+				      "Speed": 85,<br/>
+				      "Special": 95<br/>
+				    }
+				</code></p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../../../../contents/se.html">Contents</a>
+	<a href="../ray/se.html">Ray</a>
+	<a href="media.html">Media</a>
+	<a href="stats.html" class="selected">Stats</a>
+	<a href="items.html">Items</a>
+	<a href="map.html">Map</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

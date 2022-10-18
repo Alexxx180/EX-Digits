@@ -1,15 +1,16 @@
-.grid {
+body {
     display: grid;
+    grid-template-rows: auto 10pt 1fr auto 10pt 120pt;
 }
 
-.r3 {
+main, .r3 {
     grid-row: 3;
 }
 
-.r4 {
+nav, .r4 {
     grid-row: 4;
 }
 
-.r6 {
+footer, .r6 {
     grid-row: 6;
 }

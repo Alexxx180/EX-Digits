@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Hero Stats</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">!</span>
+			Limits
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Only 3 characters.</li>
+					<li>You <u>must</u> publish under our <a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">license</a>.</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Files location
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Go to game folder.</li>
+					<li>
+						<article>
+							<p>Go to "Resources/Media/Data/Characters/Pay/Beginner.json".</p>
+							<p>If there is no folder, duplicate and rename one.</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<p>Check "Beginner.json" file to work with main content.</p>
+							<p>Check "Next.json" file to edit next level stats.</p>
+						</article>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Stand image
+		</summary>
+		<section>
+			<article id="StandImage">
+				<h4>Hero map stand poses</h4>
+				<ul>
+					<li>SVG format</li>
+					<li>60 x 60</li>
+					<li>Clear borders of the drawing</li>
+					<li>Transparent background</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>You will need four images</h4>
+				<ul>
+					<li>Up.svg</li>
+					<li>Left.svg</li>
+					<li>Down.svg</li>
+					<li>Right.svg</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<p>Go to "Resources/Media/Images/Locations/Total/Person/Pay/Static".</p>
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your files here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"StandImage": ["Resources/Media/Images/Locations/Total/Person/Pay/Static/Up.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Left.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Down.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Right.svg"]
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Going image
+		</summary>
+		<section>
+			<article id="GoingImage">
+				<h4>Hero map walking poses</h4>
+				<ul>
+					<li>SVG format</li>
+					<li>60 x 60</li>
+					<li>Clear borders of the drawing</li>
+					<li>Transparent background</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>You will need at least eight images</h4>
+				<ul>
+					<li>Up/1.svg</li>
+					<li>Up/2.svg</li>
+					<li>Left/1.svg</li>
+					<li>Left/2.svg</li>
+					<li>Down/1.svg</li>
+					<li>Down/2.svg</li>
+					<li>Right/1.svg</li>
+					<li>Right/2.svg</li>
+				</ul>
+				<p>The more images you create - the more<br/>
+				smoothier walk will look.</p>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<p>Go to "Resources/Media/Images/Locations/Total/Person/Pay/Walk".</p>
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your files here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"GoingImage": [<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Walk/Up/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Up/2.svg"],<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Static/Left.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Left/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Left.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Left/2.svg"],<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Walk/Down/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Down/2.svg"],<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Static/Right.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Right/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Right.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Right/2.svg"]<br/>
+						]
+					</code></p>
+					<h5>To note: left and right poses use<br/>
+					intermediate frames from stand images<br/>
+					to smooth moves and recycle content.</h5>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Map image
+		</summary>
+		<section>
+			<article id="Front">
+				<h4>Hero current map image</h4>
+				
+				<p><code>
+					"MapImage": "Resources/Media/Images/Locations/Total/Person/Pay/Static/Down.svg"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<img src="https://github.com/Alexxx180/Desert-Rage/blob/7353ca65a4939a5368a1397bf260bd2c3f848af6/Desert-Rage/Resources/Media/Images/Battle/Character/Ray/Icon.svg?raw=true">
+			Icons
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>SVG format</li>
+					<li>60 x 60</li>
+					<li>Clear borders of the drawing</li>
+					<li>
+						<article>
+							<p>Transparent background<br/>
+								<b>Icon only</b></p>
+						</article>
+					</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>You will need three images</h4>
+				<ul>
+					<li>Icon.svg</li>
+					<li>Idle.svg</li>
+					<li>Action.svg</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<p>Go to "Resources/Media/Images/Battle/Character/Pay".</p>
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your files here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"Icon": "Resources/Media/Images/Battle/Character/Pay/Icon.svg",<br/>
+						"Image": "Resources/Media/Images/Battle/Character/Pay/Idle.svg",<br/>
+						"Action": "Resources/Media/Images/Battle/Character/Pay/Action.svg"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Description
+		</summary>
+		<section id="Description">
+			<article>
+				<h4>Recommendations</h4>
+				<p>Great description should be short and reliable.</p>
+				<p><code>
+					"Description": "I'm the takoyaki guy"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Name
+		</summary>
+		<section>
+			<article id="Name">
+				<h4>Recommendations</h4>
+				<p>Good name should be short and<br/> contain 1-2 words.</p>
+				<p><code>
+					"Name": "Pay"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">EN</span>
+			Localization
+			<span class="key">RU</span>
+		</summary>
+		<section>
+			<article>
+				<p>To made mod work correctly on both<br/>
+				english and russian devices duplicate<br/>
+				the file.</p>
+				<p>Then change file extension from<br/>
+				<code>.json</code>  to  <code>.ru-RU.json</code></p>
+				<p>Now edit <a href="#Name">Name</a> and <a href="#Description">Description</a> to a russian equivalent.</p>
+				<p><code>
+					"Name": "Пэй",<br/>
+				    "Description": "Я парень с такояки",
+				</code></p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../../../../contents/se.html">Contents</a>
+	<a href="../ray/se.html">Ray</a>
+	<a href="media.html" class="selected">Media</a>
+	<a href="stats.html">Stats</a>
+	<a href="items.html">Items</a>
+	<a href="map.html">Map</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

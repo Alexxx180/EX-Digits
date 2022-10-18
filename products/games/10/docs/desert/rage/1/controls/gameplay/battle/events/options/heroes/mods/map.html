@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Hero Stats</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			Place
+		</summary>
+		<section>
+			<article id="Drop">
+				<h4>Hero map position by default</h4>
+				
+				<p><code>
+					"Place":{ "X":0, "Y":0 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Step
+		</summary>
+		<section>
+			<article id="Drop">
+				<h4>Determines hero step length</h4>
+				<p>Order</p>
+				<ul>
+					<li>Up</li>
+					<li>Left</li>
+					<li>Down</li>
+					<li>Right</li>
+				</ul>
+				
+				<p><code>
+					"Step": [{ "X": 0, "Y": -1 }, { "X": -1, "Y": 0 },<br/>
+					{ "X": 0, "Y": 1 }, { "X": 1, "Y": 0 }]
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Front
+		</summary>
+		<section>
+			<article id="Front">
+				<h4>Which tile in front of the hero?</h4>
+				
+				<p><code>
+					"Front":{ "X":0, "Y":-1 }
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			To battle
+		</summary>
+		<section>
+			<article id="ToBattle">
+				<h4>How many steps to battle?</h4>
+				
+				<p><code>
+					"ToBattle": 0
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Pose
+		</summary>
+		<section>
+			<article id="Front">
+				<h4>How will the hero be deployed?</h4>
+				
+				<p><code>
+					"Pose": 0
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Walk
+		</summary>
+		<section>
+			<article id="Front">
+				<h4>Hero current walk pose</h4>
+				
+				<p><code>
+					"Walk": 0
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">Walk</span>
+			Through
+		</summary>
+		<section>
+			<article id="Front">
+				<h4>Defines the tiles on which hero can walk</h4>
+				
+				<p><code>
+					"WalkThrough": [".", ",", ":", "_", "!", "P", "T"]
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">Result</span>
+		</summary>
+		<section>
+			<article>
+				<p>
+					<code>"Theme":"NewTemple/UghZan2.mp3",<br/>
+						"Level": 1,<br/>
+				      	"Name": "Pay",<br/>
+				      	"Description": "I'm the takoyaki guy",<br/>
+				      	"Equipped": {<br/>
+						"Weapon": 0,<br/>
+						"Torso": 0,<br/>
+						"Legs": 0,<br/>
+						"Feet": 0<br/>
+					  	},<br/>
+				      	"Equipment": [{ "Kind": 0, "Set": 0 }, { "Kind": 1, "Set": 0 },<br/>
+						{ "Kind": 2, "Set": 0 }, { "Kind": 3, "Set": 0 }],<br/>
+					 	"Items": "AAAAAAAAAA==",<br/>
+				      	"Stats": { "Attack": 120, "Defence": 100, "Speed": 85, "Special": 95 },<br/>
+				      	"Skills": [6],<br/>
+				      	"Learned": [],<br/>
+				      	"ToNextLevel": [{ "Minimum": 0, "Current": 0, "Max": 24 },<br/>
+						{ "Minimum": 0, "Current": 0, "Max": 38 },<br/>
+						{ "Minimum": 0, "Current": 0, "Max": 61 }]
+				      	"Experience": { "IsMax": false, "IsEmpty": true, "IsSealed": false,<br/>
+						"Minimum": 0, "Current": 0, "Max": 10 },<br/>
+					  	"Hp":{ "IsMax":true, "IsEmpty":false, "IsSealed":false,<br/>
+					 	"Minimum":0, "Current":300, "Max":500 },<br/>
+				      	"Ap":{ "IsMax":true, "IsEmpty":false, "IsSealed":false,<br/>
+					 	"Minimum":0, "Current":500, "Max":500 },<br/>
+					 	"Icon": "Resources/Media/Images/Battle/Character/Pay/Icon.svg",<br/>
+						"Image": "Resources/Media/Images/Battle/Character/Pay/Idle.svg",<br/>
+						"Action": "Resources/Media/Images/Battle/Character/Pay/Action.svg"
+				      	"StatusInfo":[<br/>
+				         {<br/>
+				            "Time":{ "IsMax":false, "IsEmpty":true, "IsSealed":false,<br/>
+				               "Minimum":0, "Current":0, "Max":50 },<br/>
+				            "Icon": "/Resources/Media/Images/Menu/Skills/Poison.svg",<br/>
+				            "Description": "Ugly goo, flowing through the veins. Slowly drains strength.",<br/>
+				            "Name": "Poison"
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":false, "IsEmpty":true, "IsSealed":false,<br/>
+				               "Minimum":0, "Current":0, "Max":50 },<br/>
+				            "Icon":"/Resources/Media/Images/Menu/Skills/AttackUp.svg",<br/>
+				            "Description":"Focusing helps you hit much more effectively.",<br/>
+				            "Name":"Power UP"<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":false, "IsEmpty":true, "IsSealed":false,<br/>
+				               "Minimum":0, "Current":0, "Max":50 },<br/>
+				            "Icon":"/Resources/Media/Images/Menu/Skills/DefenceUp.svg",<br/>
+				            "Description":"Being vigilant is one of the components of invulnerability.",<br/>
+				            "Name":"Guard"<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":false, "IsEmpty":true, "IsSealed":false,<br/>
+				               "Minimum":0, "Current":0, "Max":50 },<br/>
+				            "Icon":"/Resources/Media/Images/Menu/Stats/Defence.svg",<br/>
+				            "Description":"With a good stance and a block, everything is on the shoulder.",<br/>
+				            "Name":"Shield"<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":false, "IsEmpty":true, "IsSealed":false,<br/>
+				               "Minimum":0, "Current":0, "Max":50 },<br/>
+				            "Icon":"/Resources/Media/Images/Menu/Stats/Speed.svg",<br/>
+				            "Description":"No one knows what leads him into endless battles.",<br/>
+				            "Name":"Berserk"<br/>
+				         },<br/>
+				         {<br/>
+				            "Time":{ "IsMax":false, "IsEmpty":true, "IsSealed":false,<br/>
+				               "Minimum":0, "Current":0, "Max":50 },<br/>
+				            "Icon":"/Resources/Media/Images/Menu/Skills/SpeedUp.svg",<br/>
+				            "Description":"Woo-Hoo, SuperSpeed!",<br/>
+				            "Name":"Speed UP"<br/>
+				         }<br/>
+				      ],<br/>
+				      "GoingImage": [<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Walk/Up/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Up/2.svg"],<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Static/Left.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Left/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Left.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Left/2.svg"],<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Walk/Down/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Down/2.svg"],<br/>
+						["Resources/Media/Images/Locations/Total/Person/Pay/Static/Right.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Right/1.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Right.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Walk/Right/2.svg"]<br/>
+					  ],<br/>
+				      "StandImage": ["Resources/Media/Images/Locations/Total/Person/Pay/Static/Up.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Left.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Down.svg",<br/>
+						"Resources/Media/Images/Locations/Total/Person/Pay/Static/Right.svg"],<br/>
+				      "WalkThrough": [".", ",", ":", "_", "!", "P", "T"],<br/>
+				      "MapImage": "Resources/Media/Images/Locations/Total/Person/Pay/Static/Down.svg",<br/>
+				      "Pose": 0,<br/>
+				      "Walk": 0,<br/>
+				      "ToBattle": 0,<br/>
+				      "Front":{ "X":0, "Y":-1 },<br/>
+				      "Step": [{ "X": 0, "Y": -1 }, { "X": -1, "Y": 0 },<br/>
+						{ "X": 0, "Y": 1 }, { "X": 1, "Y": 0 }],<br/>
+					  "Place":{ "X":0, "Y":0 },<br/>
+					</code>
+				</p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../../../../contents/se.html">Contents</a>
+	<a href="../ray/se.html">Ray</a>
+	<a href="media.html">Media</a>
+	<a href="stats.html">Stats</a>
+	<a href="items.html">Items</a>
+	<a href="map.html" class="selected">Map</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

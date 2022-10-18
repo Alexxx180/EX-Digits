@@ -1,0 +1,54 @@
+.map {
+	font-family: "Courier New";
+	font-weight: bold;
+	border-spacing: 0;
+	cursor: pointer;
+}
+
+.zone {
+	color: rgb(183, 183, 183);
+	background: rgb(40, 40, 40);
+	border-color: rgb(40, 40, 40);
+}
+
+td:hover, td:target {
+	color: rgb(60, 60, 60);
+	background-color: rgb(240, 240, 240);
+}
+
+td {
+	padding: 5pt;
+}
+
+.b, .b2 {
+	border-width: 0px;
+	border-style: solid;
+}
+
+.b {
+	border-color: rgb(183, 183, 183);
+}
+
+.b2 {
+	border-color: rgb(127, 127, 127);
+}
+
+.b2.a, .b.a {
+	border-width: 2px;
+}
+
+.b.l {
+	border-left-width: 2px;
+}
+
+.b.r {
+	border-right-width: 2px;
+}
+
+.b.t {
+	border-top-width: 2px;
+}
+
+.b.d {
+	border-bottom-width: 2px;
+}

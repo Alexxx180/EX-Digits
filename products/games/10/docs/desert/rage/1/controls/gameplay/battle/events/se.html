@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Battle - Events</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../about.html">Desert Rage</a>
+	<a href="demo.html">Demo</a>
+    <a href="original.html">Original</a>
+    <a href="se.html" class="selected">Serious Edition</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">►</span>
+			Starting turn
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/qBWtkuCnNqk?t=124">Best</a>
+				<a href="https://youtu.be/4dpIlceLPIQ?t=13">Worst</a>
+			</nav>
+			<br/>
+			<article>
+				<h4>Fast analyze</h4>
+				<p>This time you have preemptive strike.</p>
+				<p>You need to analyze your enemies and<br/>
+					build strategy to overcome them or<br/>
+					escape without any extra problems.</p>
+				
+				<p>Let's see two different situations.</p>
+				<article>
+					<h4>Blood army</h4>
+					<p>Just encountered a whole bunch of some sort<br/>
+					enemies at the game start?</p>
+					<p>It's the worst situation we can imagine.</p>
+					<p>In reality we have to make choices and<br/>
+					in some cases the best - just to leave.</p>
+					<p>Yes, just <a href="options/se.html#Escape">
+					escape</a> from them!</p>
+				</article>
+
+				<article>
+					<h4>Alone spider</h4>
+					<p>You've encountered with one spider at
+					<a href="../stats/se.html#LV">LV</a> 1.</p>
+					<p>It's the best situation we can imagine.<br/>
+					During the game we have main goal, and<br/>
+					can't just flee out dungeon like a little<br/>
+					girl.</p>
+					<p>So best we can do - grind the spider<br/>
+					as much as we can.</p>
+					<p>We need to do this in case to become<br/>
+					stronger. Then worst situations won't be<br/>
+					such dramatical.</p>
+					<p>Further more, you can grind not just<br/>
+					"alone Spider" but whole army.</p>
+					<p>You won't be afraid to take any damage<br/>
+					and, WOW, you're just had become king<br/>
+					of this damned place.</p>
+				</article>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">►I</span> Escape
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/qBWtkuCnNqk?t=112">Demo</a>
+			</nav>
+			<br/>
+			<p id="Escape">Instantly end fight.</p>
+			<article>
+				<h4>Escape chance</h4>
+
+				<p class="key" id="EscapeChance">
+					∀escape ∈ Successful escape : (escape = 1)<br/><br/>
+					1 ≤ escape < barrier<br/><br/>
+					barrier = (All enemies / Hero) <b>SPD</b>
+				</p>
+
+				<table class="left">
+					<tr><td>Enemies</td>
+					<td class="key">SPD</td></tr>
+
+					<tr><td><b>Spider A</b></td>
+					<td class="centered"><b>10</b></td></tr>
+
+					<tr><td>Spider B</td>
+					<td class="centered">10</td></tr>
+
+					<tr><td>Spider C</td>
+					<td class="centered">10</td></tr>
+				</table>
+
+				<table class="left">
+					<tr><td>Hero</td>
+					<td class="key">SPD</td></tr>
+
+					<tr><td><b>Ray</b></td>
+					<td class="centered"><b>15</b></td></tr>
+				</table>
+
+				<p class="left key">
+					barrier = 30 / 15 = 2<br/><br/>
+					1 ≤ escape < 2<br/>
+					escape = 1<br/>
+					1 ≤ 1 < 2<br/>
+					escape ∈ Successful escape<br/><br/>
+					<b>Can Escape</b>
+				</p>
+				<br/><br/>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Hero
+			<span class="tag">attack blasting</span> !
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/qBWtkuCnNqk?t=36">Demo</a>
+			</nav>
+			<br/>
+			<h4>Your actions matter</h4>
+			<p>
+				After each your turn hero will act<br/>
+				according options selected before.
+			</p>
+			<p>
+				It can be various ways depending<br/>
+				your battle strategy.
+			</p>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">!</span>
+			Enemy strikes back
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/qBWtkuCnNqk?t=36">Demo</a>
+			</nav>
+			<br/>
+			<h4 id="EnemyAttack">"That hurts!"</h4>
+			<p>
+				Now enemy prepared to turn. Each enemy<br/>
+				fighting in its own style like biting,<br/>
+				crunching, dashing, punching etc.
+			</p>
+			<p>
+				The longer the battle and the weaker the<br/>
+				hero, the higher the probability of losing.
+			</p>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">Oo Poison oO</span>
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/vr41jqV947g?t=155">Demo</a>
+			</nav>
+			<br/>
+			<article id="Poison">
+				<h4>Which enemy is poisonous?</h4>
+				<p>You can determine it via:</p>
+				<ol>
+					<li>First bite</li>
+					<li>Our docs</li>
+				</ol>
+			</article>
+			
+			<article>
+				<h4>You're poisoned</h4>
+				<p>The bad news: the <a href="statuses/se.html#Poison">poison</a> is mortal.</p>
+				<p>The good news: you can get rid of it with...</p>
+				<ul>
+					<li><p><a href="../stats/items/se.html#Antidote">Antidote</a></p></li>
+					<li><p><a href="../stats/items/skills/se.html#Heal">Heal</a></p></li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">X - X</span> Lost...
+		</summary>
+		<section>
+			<h4>How could it be?</h4>
+			<p>Probably you lost your vigilance and...</p>
+
+			<article>
+				<h4>What happened next?</h4>
+				<ol>
+					<li>Stongest enemy just kicked you out</li>
+					<li>Poison swallowed your hero</li>
+					<li>Bunch of enemies was too fast...</li>
+				</ol>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">1</span> YOU WIN!
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/qBWtkuCnNqk?t=69">Demo</a>
+			</nav>
+			<br/>
+			<h4>Congratulations!</h4>
+			<p>Continue in the same spirit of a<br/>
+			complete walkthrough of the game.</p>
+
+			<article id="Growth">
+				<h4>Level growth - your medal</h4>
+				<p>After each battle victory you'll<br/>
+					receive some points.</p>
+				<p>So-called <a href="../stats/se.html#EXP">EXP</a>.</p>
+
+				<p>When you'll get enough your hero<br/>
+				will increase its level.</p>
+				<p>Or <a href="#LevelUP">Level UP</a> for short.</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">Level UP</span>
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/qBWtkuCnNqk?t=69">Demo</a>
+			</nav>
+			<br/>
+			<h4 id="LevelUP">Bring it again</h4>
+			<p>
+				After each level up your hero will<br/>
+				become stronger and it will be<br/>
+				easier for you to battle again.
+			</p>
+			<p>
+				<a href="../stats/se.html">Stats</a>
+			</p>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../contents/se.html">Contents</a>
+	<a href="../se.html">Battle</a>
+	<a href="demo.html" class="selected">Events</a>
+	<a href="statuses/se.html">Statuses</a>
+	<a href="options/se.html">Options</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

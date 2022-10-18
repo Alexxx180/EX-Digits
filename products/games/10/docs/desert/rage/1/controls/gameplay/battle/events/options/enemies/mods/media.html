@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Enemy Media</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">!</span>
+			Limits
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Only 12 enemies and 4 bosses.</li>
+					<li>You <u>must</u> publish under our <a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">license</a>.</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			File location
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Go to game folder.</li>
+					<li>
+						<section>
+							<article>
+								<p><b>For enemies</b></p>
+								<p>Go to "Resources/Media/Data/Opponents/Foes.json".</p>
+							</article>
+
+							<article>
+								<p><b>For bosses</b></p>
+								<p>Go to "Resources/Media/Data /Opponents/Bosses.json".</p>
+							</article>
+						</section>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">♫</span>
+			Theme
+		</summary>
+		<section>
+			<article>
+				<h5>Bosses only</h5>
+				<ul>
+					<li>MP3 format</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>Go to "Resources/Media/OST/Music/NewTemple".<br/>
+					If there is no folder, create one
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"Noise": "Resources/Media/OST/Music/NewTemple/Boss.mp3"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">♫</span>
+			Death
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>MP3 format</li>
+					<li>Duration ≤ 2 seconds</li>
+				</ul>
+				<h5>If hero defeated last enemy on<br/>
+				the floor then this theme will be<br/>
+				replaced with victory fanfare.</h5>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<section>
+								<p><b>For enemies</b></p>
+								<p>Go to "Resources/Media/OST/Sounds/Defeat/Enemies".</p>
+							</section>
+
+							<section>
+								<p><b>For bosses</b></p>
+								<p>Go to "Resources/Media/OST/Sounds/Defeat/Bosses".</p>
+							</section>
+
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"Death": "Resources/Media/OST/Sounds/Defeat/Bosses/UghZan2.mp3"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			ID
+		</summary>
+		<section>
+			<article id="ID">
+				<p><b>ID</b> - requred sequence enemy number.</p>
+
+				<p><code>
+					"ID": 1
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<img src="https://github.com/Alexxx180/Desert-Rage/blob/7353ca65a4939a5368a1397bf260bd2c3f848af6/Desert-Rage/Resources/Media/Images/Battle/Bosses/Friend/Idle.svg?raw=true">
+			Icons
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>SVG format</li>
+					<li>60 x 60</li>
+					<li>Transparent background</li>
+					<li>Clear borders of the drawing</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>You will need two enemy images</h4>
+				<ul>
+					<li>Idle.svg</li>
+					<li>Action.svg</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>
+						<article>
+							<section>
+								<p><b>For enemies</b></p>
+								<p>Go to "Resources/Media/Images/Battle/Enemies/UghZan2".</p>
+							</section>
+
+							<section>
+								<p><b>For bosses</b></p>
+								<p>Go to "Resources/Media/Images/Battle/Bosses/UghZan2".</p>
+							</section>
+
+							<p>If there is no folder, create one</p>
+						</article>
+					</li>
+					<li>Place your files here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"Icon": "Resources/Media/Images/Battle/Bosses/UghZan2/Idle.svg",<br/>
+						"Action": "Resources/Media/Images/Battle/Bosses/UghZan2/Action.svg"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Description
+		</summary>
+		<section id="Description">
+			<article>
+				<h4>Recommendations</h4>
+				<p>Great description should be short and reliable.</p>
+				<p><code>
+					"Description": "Who are you?!"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Name
+		</summary>
+		<section>
+			<article id="Name">
+				<h4>Recommendations</h4>
+				<p>Good name should be short and<br/> contain 1-2 words.</p>
+				<p><code>
+					"Name": "Ugh Zan II"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">EN</span>
+			Localization
+			<span class="key">RU</span>
+		</summary>
+		<section>
+			<article>
+				<p>To made mod work correctly on both<br/>
+				english and russian devices duplicate<br/>
+				the file.</p>
+				<p>Then change file extension from<br/>
+				<code>.json</code>  to  <code>.ru-RU.json</code></p>
+				<p>Now edit <a href="#Name">Name</a> and <a href="#Description">Description</a> to a russian equivalent.</p>
+				<p><code>
+					"Name": "Угх-Зан II",<br/>
+				    "Description": "Ты кто?!",
+				</code></p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../../../../contents/se.html">Contents</a>
+	<a href="../se.html">Enemies</a>
+	<a href="media.html" class="selected">Media</a>
+	<a href="stats.html">Stats</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

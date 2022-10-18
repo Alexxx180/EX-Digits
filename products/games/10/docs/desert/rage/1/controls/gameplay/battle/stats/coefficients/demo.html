@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - Demo - Coefficients</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../about.html">Desert Rage</a>
+	<a href="demo.html" class="selected">Demo</a>
+    <a href="original.html">Original</a>
+    <a href="se.html">Serious Edition</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">SW</span>
+			Skill weakness
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/hGgOZeEUVBM?t=202">Demo</a>
+			</nav>
+			<br/>
+			<article>
+				<h4>Determines weakness against concrete skill.</h4>
+
+				<p class="left">Spider <span class="key">SW</span></p>
+				<table class="centered">
+					<tr>
+						<td>Torch</td>
+						<td>Whip</td>
+						<td>Super</td>
+					</tr>
+
+					<tr>
+						<td>2</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</table>
+
+				<p>So, <a href="../items/skills/demo.html#Torch">Torch</a> will
+					do twice more <a href="#DamageSPL">damage</a>.</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">SC</span>
+			Skill coefficient
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/GaSAsZIJEfU?t=45">Demo</a>
+			</nav>
+			<br/>
+			<article>
+				<h4>Determines power of concrete skill.</h4>
+				<p>The more expensive skills you use - the more powerful they are.</p>
+
+				<article>
+					<h4>How that works?</h4>
+					<p>Let's compare two fight skills <span class="key">SC</span>.</p>
+					<table>
+						<tr>
+							<td>Torch</td>
+							<td>Whip</td>
+						</tr>
+						<tr>
+							<td>1.25</td>
+							<td>1.5</td>
+						</tr>
+					</table>
+					<p>So <span class="key">Whip > Torch</span>
+					against monster without any weakness.</p>
+				</article>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">!</span>
+			Damage
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+			</nav>
+			<br/>
+			<article>
+				<h4>Temporary value, calculated after performing a hit.</h4>
+				<ul>
+					<li>
+						<article>
+							<p>For <b>Attack</b> option / Enemy</p>
+							<p class="key" id="DamageATK">
+								Damage = Fighter <b>ATK</b> - Target <b>DEF</b>
+							</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<p>For <b>Skills</b> use</p>
+							<p class="key" id="DamageSPL">
+								Damage = Fighter <b>SPL</b> * <b>SC</b> * Target <b>Skill WK</b>
+							</p>
+						</article>
+					</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Can be found on the midle battle message panel.</h4>
+				<p>Although it will stay only few seconds before<br/>
+				dissapear or will be overflown by another message</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">BT</span>
+			Battle tick
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+			</nav>
+			<br/>
+			<article id="BT">
+				<h4>Determines time ticking speed const.</h4>
+				<p>By default: <span class="key">50 
+					<a href="https://en.wikipedia.org/wiki/Millisecond">ms</a>
+				</span>.</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">TP</span>
+			Time points
+		</summary>
+		<section>
+			<nav>
+				<a href="https://youtu.be/hGgOZeEUVBM?t=16">Demo</a>
+			</nav>
+			<br/>
+			<article id="TimePoint">
+				<h5><p><span class="key">TP</span>
+				Time point - time measurement unit.</p></h5>
+			</article>
+
+			<article>
+				<h4>Calculation</h4>
+				<p>Time values in battle based on different factors.</p>
+				<ul>
+					<li>
+						<article>
+							<b>For hero</b>
+							<p class="key">
+								TP = (4.8 <a href="#BT">BT</a> / <a href="../demo.html#Speed">SPD</a>)
+							</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<b>For enemy</b>
+							<p class="key">
+								TP = 0.5 <a href="#BT">BT</a>
+							</p>
+						</article>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../demo.html">Battle</a>
+	<a href="../demo.html">Stats</a>
+	<a href="demo.html" class="selected">Coefficients</a>
+	<a href="../items/demo.html">Items</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>

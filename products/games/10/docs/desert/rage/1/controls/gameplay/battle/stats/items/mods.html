@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>DR - SE - Item Mods</title>
+
+	<link rel="shortcut icon" href="../../../../../../../../../icons/desert-rage.ico" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../styles/grid.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../styles/total.css" />
+	<link rel="stylesheet" href="../../../../../../../../../../../../styles/products.css" />
+</head>
+<body>
+
+<header>
+	<a href="../../../../../about.html">Desert Rage</a>
+	<a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">License</a>
+</header>
+
+<main class="stretch">
+	<details>
+		<summary>
+			<span class="key">!</span>
+			Limits
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Only 7 items.</li>
+					<li>You <u>must</u> publish under our <a href="https://github.com/Alexxx180/Desert-Rage/blob/master/LICENSE.md">license</a>.</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			File location
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>Go to game folder.</li>
+					<li>Go to "Resources/Media/Data/Items/Inventory.json".</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">+</span>
+			Commands
+		</summary>
+		<section>
+			<article>
+				<p>What should item do?</p>
+				<table>
+					<tr>
+						<th>Command</th>
+						<th>Meaning</th>
+						<th>To be specified</th>
+					</tr>
+					<tr>
+						<td>Dependent.FightAllCommand</td>
+						<td>Fight all foes</td>
+						<td>"Dependency", "Power", "Value"</td>
+					</tr>
+					<tr id="CureCommand">
+						<td>Dependent.CureCommand</td>
+						<td>+ hero HP</td>
+						<td>"Dependency", "Power", "Value"</td>
+					</tr>
+					<tr>
+						<td>Dependent.RestCommand</td>
+						<td>+ hero AP</td>
+						<td>"Dependency", "Power", "Value"</td>
+					</tr>
+					<tr>
+						<td>Dependent.RecoverCommand</td>
+						<td>+ hero HP-AP</td>
+						<td>"Dependency", "Power", "Value"</td>
+					</tr>
+					<tr>
+						<td>Independent.CureMaxCommand</td>
+						<td>100% hero HP</td>
+						<td>"Value"</td>
+					</tr>
+					<tr>
+						<td>Independent.RestMaxCommand</td>
+						<td>100% hero AP</td>
+						<td>"Value"</td>
+					</tr>
+					<tr>
+						<td>Independent.RecoverMaxCommand</td>
+						<td>100% hero HP-AP</td>
+						<td>"Value"</td>
+					</tr>
+					<tr>
+						<td>Independent.Status.ApplyStatus</td>
+						<td>+ hero status</td>
+						<td>"Status", "Value"</td>
+					</tr>
+					<tr id="RemoveStatus">
+						<td>Independent.Status.RemoveStatus</td>
+						<td>- hero status</td>
+						<td>"Status", "Value"</td>
+					</tr>
+				</table>
+				<p><code>
+					"Command": "Dependent.CureCommand"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Name
+		</summary>
+		<section>
+			<article id="Name">
+				<h4>Recommendations</h4>
+				<p>Good name should be short and<br/> contain 1-2 words.</p>
+				<p><code>
+					"Name": "Toast"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			Description
+		</summary>
+		<section id="Description">
+			<article>
+				<h4>Recommendations</h4>
+				<p>Great description should be short and reliable.</p>
+				<p><code>
+					"Description": "+85 HP"
+				</code></p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<img src="https://github.com/Alexxx180/Desert-Rage/blob/2f289da6cd7ebc95516d63418806575a83d03aa4/Desert-Rage/Resources/Media/Images/Menu/Items/Bandage.svg?raw=true">
+			Icon
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>SVG format</li>
+					<li>60 x 60</li>
+					<li>Semitransparent background</li>
+					<li>Clear borders of the drawing</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>Go to "Resources/Media/Images/Menu/Items".<br/>
+					If there is no folder, create one
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"Icon": "Resources/Media/Images/Menu/Items/Toast.svg"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">♫</span>
+			Noise
+		</summary>
+		<section>
+			<article>
+				<ul>
+					<li>MP3 format</li>
+					<li>Duration ≤ 2 seconds</li>
+				</ul>
+			</article>
+
+			<article>
+				<h4>Attachment</h4>
+				<ol>
+					<li>Go to game folder</li>
+					<li>Go to "Resources/Media/OST/Noises/Actions/Items".<br/>
+					If there is no folder, create one
+					</li>
+					<li>Place your file here</li>
+				</ol>
+
+				<section>
+					<p>Specify path from game folder to your file, like so.</p>
+					<p><code>
+						"Noise": "Resources/Media/OST/Noises/Actions/Items/Toast.mp3"
+					</code></p>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">I=I=I</span>
+			Dependencies
+		</summary>
+		<section>
+			<article id="Dependencies">
+				<p>How to determine item power?</p>
+				<ul>
+					<li>0 - const value</li>
+					<li>3 - <b>SC</b> * Hero <b>SPL</b></li>
+					<li>4 - <b>SC</b> * Hero (<b>ATK</b> + <b>SPL</b>)</li>
+				</ul>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">=50=</span>
+			Attributes
+		</summary>
+		<section>
+			<article>
+				<p>How item should behave?</p>
+				<section>
+					<article>
+						<h4>Meanings</h4>
+						<p><b>Value</b> - required sequence number<br/>
+						determines random drop choice<br/>
+						from <a href="../../../../map/symbols/se/treasures.html#Surprise">surprise block</a>.</p>
+					</article>
+
+					<article>
+						<p><b><a href="#CureCommand">Cure</a> example</b></p>
+						<p><code>
+							"Attributes": {
+						      "Dependency": 0,
+						      "Power": 85,
+						      "Value": 0
+						    }
+						</code></p>
+						<ul>
+							<li><p>Dependency = const value</p></li>
+							<li><p>Power = const value = 85</p></li>
+						</ul>
+					</article>
+
+					<article>
+						<p><b>Alternate example</b></p>
+						<p><code>
+							"Attributes": {
+						      "Dependency": 3,
+						      "Power": 3.5,
+						      "Value": 0
+						    }
+						</code></p>
+						<ul>
+							<li><p>Dependency = <b>SC</b> * Hero <b>SPL</b></p></li>
+							<li><p>Power = <b>SC</b> = 85</p></li>
+						</ul>
+					</article>
+
+					<article>
+						<p><b><a href="#RemoveStatus">Remove status</a> example</b></p>
+						<p><code>
+							"Attributes": {
+						      "Status": 0,
+						      "Value": 1
+						    }
+						</code></p>
+						<ul>
+							<li>Status = <a href="../../events/statuses/se.html#Poison">poison</a> = 0</li>
+						</ul>
+					</article>
+				</section>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="tag">Result</span>
+		</summary>
+		<section>
+			<article>
+				<p>
+					<code><span>"Command": "Dependent.CureCommand",</span><br/>
+					    <span>"Name": "Toast",</span><br/>
+					    <span>"Description": "+85 HP",</span><br/>
+					    <span>"Icon": "Resources/Media/Images/Menu/Items/Toast.svg",</span><br/>
+					    <span>"Noise": "Actions/Toast.mp3",</span><br/>
+					    <span>"Attributes": {</span>
+					    <pre><span>	"Dependency": 0,</span><br/><span>	"Power": 85,</span><br/><span>	"Value": 0</span></pre>
+					    <span>}</span>
+					</code>
+				</p>
+			</article>
+		</section>
+	</details>
+
+	<details>
+		<summary>
+			<span class="key">EN</span>
+			Localization
+			<span class="key">RU</span>
+		</summary>
+		<section>
+			<article>
+				<p>To made mod work correctly on both<br/>
+				english and russian devices duplicate<br/>
+				the file.</p>
+				<p>Then change file extension from<br/>
+				<code>.json</code>  to  <code>.ru-RU.json</code></p>
+				<p>Now edit <a href="#Name">Name</a> and <a href="#Description">Description</a> to a russian equivalent.</p>
+				<p><code>
+					"Name": "Тост",<br/>
+				    "Description": "+85 ОЗ",
+				</code></p>
+			</article>
+		</section>
+	</details>
+</main>
+
+<nav>
+	<a href="../../../../../contents/se.html">Contents</a>
+	<a href="se.html">Items</a>
+	<a href="mods.html" class="selected">Mods</a>
+</nav>
+
+<footer>
+	<p>All rights reserved</p>
+	<address>
+		<a href="mailto:alexx120702@gmail.com">Tatarintsev Aleksandr</a>
+		<a href="tel:+79212049320">+7 (921) 204-93-20</a>
+	</address>
+</footer>
+
+</body>
+</html>
