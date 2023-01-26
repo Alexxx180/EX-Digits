@@ -1,3 +1,3 @@
-# XEtreme Team
+# EX - Digits
 
-XEtreme Team company web-site perfomance.
+EX-Digits company web-site perfomance.
